@@ -1,0 +1,10 @@
+CMake Error at /home/keithuncouth/esp-idf-v5.3.2/tools/cmake/component.cmake:314 (message):
+  Include directory
+  '/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/components/main'
+  is not a directory.
+Call Stack (most recent call first):
+  /home/keithuncouth/esp-idf-v5.3.2/tools/cmake/component.cmake:482 (__component_add_include_dirs)
+  components/ota_diag/CMakeLists.txt:1 (idf_component_register)
+
+
+make: *** [Makefile:2188: cmake_check_build_system] Error 1

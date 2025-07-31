@@ -1,0 +1,2 @@
+/home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc libwifi_sta.a CMakeFiles/__idf_wifi_sta.dir/wifi_sta.c.obj
+/home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib libwifi_sta.a

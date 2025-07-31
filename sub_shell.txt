@@ -1,0 +1,5 @@
+### This command makes a subshell so that esp-idf does not 
+
+  everytime an incorrect cmd is ran ###
+
+bash --rcfile <(echo '. $HOME/esp-idf-v5.3.2/export.sh')

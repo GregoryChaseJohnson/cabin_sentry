@@ -1,0 +1,7 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/components/ota_diag/ota_diag.c:33:10: fatal error: stream_ctrl.h: No such file or directory
+   33 | #include "stream_ctrl.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [esp-idf/ota_diag/CMakeFiles/__idf_ota_diag.dir/build.make:76: esp-idf/ota_diag/CMakeFiles/__idf_ota_diag.dir/ota_diag.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5857: esp-idf/ota_diag/CMakeFiles/__idf_ota_diag.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

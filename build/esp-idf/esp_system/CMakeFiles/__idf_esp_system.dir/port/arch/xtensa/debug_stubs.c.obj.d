@@ -1,0 +1,25 @@
+esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj: \
+ /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/port/arch/xtensa/debug_stubs.c \
+ /home/keithuncouth/esp-idf-v5.3.2/components/xtensa/include/eri.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdint.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/xtensa/include/xtensa-debug-module.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/xtensa/esp32/include/xtensa/config/core-isa.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stdarg.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/include/stddef.h \
+ /home/keithuncouth/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
+ /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/config/sdkconfig.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/esp_rom/include/esp_rom_sys.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/soc/esp32/include/soc/reset_reasons.h \
+ /home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log_internal.h

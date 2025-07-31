@@ -1,0 +1,3 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/components/ota_diag/ota_diag.c:230:13: warning: 'simple_ota_example_task' defined but not used [-Wunused-function]
+  230 | static void simple_ota_example_task(void *pvParameter)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~

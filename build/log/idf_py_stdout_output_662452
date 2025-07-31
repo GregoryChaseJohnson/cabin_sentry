@@ -1,0 +1,1018 @@
+    v3.99 [0m
+[0;32mI (1550) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1556) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1563) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1569) heap_init: At 3FFBBFA0 len 00024060 (144 KiB): DRAM[0m
+[0;32mI (1575) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1582) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1588) heap_init: At 4009F028 len 00000FD8 (3 KiB): IRAM[0m
+[0;32mI (1595) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1603) spi_flash: detected chip: generic[0m
+[0;32mI (1607) spi_flash: flash io: dio[0m
+[0;33mW (1611) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1622) main_task: Started on CPU0[0m
+[0;32mI (1632) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1632) main_task: Calling app_main()[0m
+[0;32mI (1632) main_app: App starting. Initializing NVS...[0m
+[0;31mE (1662) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+[0;32mI (1672) wifi:wifi driver task: 3ffcbe28, prio:23, stack:6656, core=0[0m
+[0;32mI (1672) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1672) wifi:wifi certification version: v7.0[0m
+[0;32mI (1672) wifi:config NVS flash: enabled[0m
+[0;32mI (1672) wifi:config nano formating: disabled[0m
+[0;32mI (1682) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1682) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1692) wifi:Init management short buffer num: 32[0m
+[0;32mI (1692) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1702) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1702) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1702) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1712) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1712) wifi_init: rx ba win: 6[0m
+[0;32mI (1712) wifi_init: accept mbox: 6[0m
+[0;32mI (1722) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1722) wifi_init: udp mbox: 6[0m
+[0;32mI (1732) wifi_init: tcp mbox: 6[0m
+[0;32mI (1732) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1742) wifi_init: tcp mss: 1440[0m
+[0;32mI (1742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1752) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1762) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (1832) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (1852) wifi:mode : sta (bc:dd:c2:c1:a0:d0)[0m
+[0;32mI (1852) wifi:enable tsf[0m
+[0;32mI (1862) main_app: OTA/diag server started on port 80[0m
+[0;32mI (1862) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1872) enhanced_ota: OTA/diag endpoints registered on shared HTTP server[0m
+[0;32mI (1882) esp32-cam Webserver: Camera server started on port 81[0m
+[0;32mI (1882) esp32-cam Webserver: Initializing camera...[0m
+[0;32mI (1892) main_app: Heap(8bit)=4309971  PSRAM=4191340[0m
+[0;32mI (1892) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1902) cam_hal: cam init ok[0m
+[0;32mI (1912) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1912) sccb: sccb_i2c_port=1[0m
+[0;32mI (1912) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1952) camera: Detected camera at address=0x30[0m
+[0;32mI (1952) camera: Detected OV2640 camera[0m
+[0;32mI (1952) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2042) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 23[0m
+[0;32mI (2042) cam_hal: Allocating 96000 Byte frame buffer in PSRAM[0m
+[0;32mI (2052) cam_hal: cam config ok[0m
+[0;32mI (2052) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (2142) main_app: App running. camera_init_ok=1, camera_server_ok=1[0m
+[0;32mI (2142) main_task: Returned from app_main()[0m
+[0;32mI (3082) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3082) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4512) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4522) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4532) wifi:connected with TMOBILE-2577, aid = 1, channel 11, BW20, bssid = dc:8d:8a:86:25:80[0m
+[0;32mI (4532) wifi:security: WPA3-SAE, phy: bgn, rssi: -67[0m
+[0;32mI (4532) wifi:pm start, type: 0[0m
+
+[0;32mI (4542) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4542) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4562) wifi:<ba-add>idx:0 (ifx:0, dc:8d:8a:86:25:80), tid:6, ssn:2, winSize:64[0m
+[0;32mI (5552) esp_netif_handlers: sta ip: 192.168.12.251, mask: 255.255.255.0, gw: 192.168.12.1[0m
+[0;32mI (7852) wifi:<ba-add>idx:1 (ifx:0, dc:8d:8a:86:25:80), tid:0, ssn:0, winSize:64[0m
+[0;32mI (11282) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11282) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11532) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11532) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11632) esp32-cam Webserver: MJPG: 15KB 212ms (4.7fps)[0m
+[0;32mI (11772) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11772) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11832) esp32-cam Webserver: MJPG: 15KB 202ms (5.0fps)[0m
+[0;32mI (11932) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11932) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11972) esp32-cam Webserver: MJPG: 15KB 135ms (7.4fps)[0m
+[0;32mI (12092) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12092) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12122) esp32-cam Webserver: MJPG: 16KB 153ms (6.5fps)[0m
+[0;32mI (12252) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12252) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12342) esp32-cam Webserver: MJPG: 14KB 218ms (4.6fps)[0m
+[0;32mI (12492) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12492) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12542) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (12652) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12652) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12752) esp32-cam Webserver: MJPG: 15KB 203ms (4.9fps)[0m
+[0;32mI (12892) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12892) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12952) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (13052) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13052) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13092) esp32-cam Webserver: MJPG: 16KB 133ms (7.5fps)[0m
+[0;32mI (13212) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13212) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13262) esp32-cam Webserver: MJPG: 16KB 173ms (5.8fps)[0m
+[0;32mI (13372) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13372) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13462) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (13602) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13612) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13672) esp32-cam Webserver: MJPG: 15KB 208ms (4.8fps)[0m
+[0;32mI (13762) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13772) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13802) esp32-cam Webserver: MJPG: 16KB 123ms (8.1fps)[0m
+[0;32mI (13962) esp32-cam Webserver: MJPG: 16KB 167ms (6.0fps)[0m
+[0;32mI (14182) esp32-cam Webserver: MJPG: 16KB 218ms (4.6fps)[0m
+[0;32mI (14392) esp32-cam Webserver: MJPG: 16KB 207ms (4.8fps)[0m
+[0;32mI (14532) esp32-cam Webserver: MJPG: 16KB 137ms (7.3fps)[0m
+[0;32mI (14692) esp32-cam Webserver: MJPG: 16KB 166ms (6.0fps)[0m
+[0;32mI (14902) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (15102) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (15312) esp32-cam Webserver: MJPG: 15KB 205ms (4.9fps)[0m
+[0;32mI (15512) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (15652) esp32-cam Webserver: MJPG: 16KB 133ms (7.5fps)[0m
+[0;32mI (15822) esp32-cam Webserver: MJPG: 16KB 176ms (5.7fps)[0m
+[0;32mI (15962) esp32-cam Webserver: MJPG: 16KB 133ms (7.5fps)[0m
+[0;32mI (16132) esp32-cam Webserver: MJPG: 16KB 170ms (5.9fps)[0m
+[0;32mI (16332) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (16552) esp32-cam Webserver: MJPG: 17KB 215ms (4.7fps)[0m
+[0;32mI (16682) esp32-cam Webserver: MJPG: 16KB 129ms (7.8fps)[0m
+[0;32mI (16852) esp32-cam Webserver: MJPG: 16KB 173ms (5.8fps)[0m
+[0;32mI (17002) esp32-cam Webserver: MJPG: 17KB 151ms (6.6fps)[0m
+[0;32mI (17262) esp32-cam Webserver: MJPG: 15KB 263ms (3.8fps)[0m
+[0;32mI (17362) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (17362) esp32-cam Webserver: Motion detected![0m
+[0;32mI (17402) esp32-cam Webserver: MJPG: 12KB 131ms (7.6fps)[0m
+[0;32mI (17522) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (17522) esp32-cam Webserver: Motion detected![0m
+[0;32mI (17562) esp32-cam Webserver: MJPG: 13KB 167ms (6.0fps)[0m
+[0;32mI (17682) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (17682) esp32-cam Webserver: Motion detected![0m
+[0;32mI (17762) esp32-cam Webserver: MJPG: 13KB 199ms (5.0fps)[0m
+[0;32mI (17952) esp32-cam Webserver: MJPG: 15KB 186ms (5.4fps)[0m
+[0;32mI (18182) esp32-cam Webserver: MJPG: 16KB 229ms (4.4fps)[0m
+[0;32mI (18382) esp32-cam Webserver: MJPG: 16KB 201ms (5.0fps)[0m
+[0;32mI (18512) esp32-cam Webserver: MJPG: 15KB 133ms (7.5fps)[0m
+[0;32mI (18672) esp32-cam Webserver: MJPG: 16KB 160ms (6.2fps)[0m
+[0;32mI (18892) esp32-cam Webserver: MJPG: 16KB 215ms (4.7fps)[0m
+[0;32mI (19102) esp32-cam Webserver: MJPG: 15KB 205ms (4.9fps)[0m
+[0;32mI (19302) esp32-cam Webserver: MJPG: 15KB 205ms (4.9fps)[0m
+[0;32mI (19442) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19442) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19512) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (19602) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19602) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19652) esp32-cam Webserver: MJPG: 16KB 137ms (7.3fps)[0m
+[0;32mI (19762) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19762) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19812) esp32-cam Webserver: MJPG: 16KB 167ms (6.0fps)[0m
+[0;32mI (19922) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19922) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19962) esp32-cam Webserver: MJPG: 16KB 149ms (6.7fps)[0m
+[0;32mI (20122) esp32-cam Webserver: MJPG: 16KB 153ms (6.5fps)[0m
+[0;32mI (20282) esp32-cam Webserver: MJPG: 16KB 164ms (6.1fps)[0m
+[0;32mI (20442) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (20592) esp32-cam Webserver: MJPG: 16KB 154ms (6.5fps)[0m
+[0;32mI (20752) esp32-cam Webserver: MJPG: 16KB 153ms (6.5fps)[0m
+[0;32mI (20912) esp32-cam Webserver: MJPG: 16KB 164ms (6.1fps)[0m
+[0;32mI (21072) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (21232) esp32-cam Webserver: MJPG: 16KB 162ms (6.2fps)[0m
+[0;32mI (21392) esp32-cam Webserver: MJPG: 16KB 155ms (6.5fps)[0m
+[0;32mI (21562) esp32-cam Webserver: MJPG: 16KB 165ms (6.1fps)[0m
+[0;32mI (21722) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (21972) esp32-cam Webserver: MJPG: 16KB 252ms (4.0fps)[0m
+[0;32mI (22182) esp32-cam Webserver: MJPG: 16KB 207ms (4.8fps)[0m
+[0;32mI (22382) esp32-cam Webserver: MJPG: 16KB 207ms (4.8fps)[0m
+[0;32mI (22522) esp32-cam Webserver: MJPG: 16KB 133ms (7.5fps)[0m
+[0;32mI (22692) esp32-cam Webserver: MJPG: 16KB 172ms (5.8fps)[0m
+[0;32mI (22832) esp32-cam Webserver: MJPG: 16KB 146ms (6.8fps)[0m
+[0;32mI (23002) esp32-cam Webserver: MJPG: 16KB 168ms (6.0fps)[0m
+[0;32mI (23212) esp32-cam Webserver: MJPG: 16KB 201ms (5.0fps)[0m
+[0;32mI (23412) esp32-cam Webserver: MJPG: 16KB 199ms (5.0fps)[0m
+[0;32mI (23612) esp32-cam Webserver: MJPG: 16KB 203ms (4.9fps)[0m
+[0;32mI (23812) esp32-cam Webserver: MJPG: 16KB 196ms (5.1fps)[0m
+[0;32mI (23962) esp32-cam Webserver: MJPG: 16KB 151ms (6.6fps)[0m
+[0;32mI (24112) esp32-cam Webserver: MJPG: 16KB 154ms (6.5fps)[0m
+[0;32mI (24242) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (24242) esp32-cam Webserver: Motion detected![0m
+[0;32mI (24322) esp32-cam Webserver: MJPG: 14KB 205ms (4.9fps)[0m
+[0;32mI (24402) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (24402) esp32-cam Webserver: Motion detected![0m
+[0;32mI (24452) esp32-cam Webserver: MJPG: 14KB 128ms (7.8fps)[0m
+[0;32mI (24562) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (24562) esp32-cam Webserver: Motion detected![0m
+[0;32mI (24632) esp32-cam Webserver: MJPG: 15KB 180ms (5.6fps)[0m
+[0;32mI (24772) esp32-cam Webserver: MJPG: 15KB 139ms (7.2fps)[0m
+[0;32mI (24922) esp32-cam Webserver: MJPG: 15KB 154ms (6.5fps)[0m
+[0;32mI (25142) esp32-cam Webserver: MJPG: 15KB 217ms (4.6fps)[0m
+[0;32mI (25282) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (25282) esp32-cam Webserver: Motion detected![0m
+[0;32mI (25342) esp32-cam Webserver: MJPG: 14KB 202ms (5.0fps)[0m
+[0;32mI (25482) esp32-cam Webserver: MJPG: 15KB 135ms (7.4fps)[0m
+[0;32mI (25602) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (25602) esp32-cam Webserver: Motion detected![0m
+[0;32mI (25632) esp32-cam Webserver: MJPG: 16KB 152ms (6.6fps)[0m
+[0;32mI (25762) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (25762) esp32-cam Webserver: Motion detected![0m
+[0;32mI (25792) esp32-cam Webserver: MJPG: 16KB 164ms (6.1fps)[0m
+[0;32mI (25922) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (25922) esp32-cam Webserver: Motion detected![0m
+[0;32mI (25972) esp32-cam Webserver: MJPG: 16KB 182ms (5.5fps)[0m
+[0;32mI (26082) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (26082) esp32-cam Webserver: Motion detected![0m
+[0;32mI (26172) esp32-cam Webserver: MJPG: 16KB 198ms (5.1fps)[0m
+[0;32mI (26362) esp32-cam Webserver: MJPG: 14KB 182ms (5.5fps)[0m
+[0;32mI (26512) esp32-cam Webserver: MJPG: 14KB 149ms (6.7fps)[0m
+[0;32mI (26672) esp32-cam Webserver: MJPG: 15KB 165ms (6.1fps)[0m
+[0;32mI (26832) esp32-cam Webserver: MJPG: 15KB 156ms (6.4fps)[0m
+[0;32mI (26992) esp32-cam Webserver: MJPG: 15KB 160ms (6.2fps)[0m
+[0;32mI (27192) esp32-cam Webserver: MJPG: 16KB 201ms (5.0fps)[0m
+[0;32mI (27332) esp32-cam Webserver: MJPG: 16KB 135ms (7.4fps)[0m
+[0;32mI (27472) esp32-cam Webserver: MJPG: 16KB 143ms (7.0fps)[0m
+[0;32mI (27702) esp32-cam Webserver: MJPG: 15KB 228ms (4.4fps)[0m
+[0;32mI (27872) esp32-cam Webserver: MJPG: 15KB 173ms (5.8fps)[0m
+[0;32mI (28032) esp32-cam Webserver: MJPG: 15KB 160ms (6.2fps)[0m
+[0;32mI (28182) esp32-cam Webserver: MJPG: 15KB 153ms (6.5fps)[0m
+[0;32mI (28352) esp32-cam Webserver: MJPG: 16KB 165ms (6.1fps)[0m
+[0;32mI (28512) esp32-cam Webserver: MJPG: 15KB 161ms (6.2fps)[0m
+[0;32mI (28722) esp32-cam Webserver: MJPG: 15KB 210ms (4.8fps)[0m
+[0;32mI (28932) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (29072) esp32-cam Webserver: MJPG: 16KB 148ms (6.8fps)[0m
+[0;32mI (29232) esp32-cam Webserver: MJPG: 15KB 155ms (6.5fps)[0m
+[0;32mI (29392) esp32-cam Webserver: MJPG: 16KB 160ms (6.2fps)[0m
+[0;32mI (29552) esp32-cam Webserver: MJPG: 16KB 164ms (6.1fps)[0m
+[0;32mI (29712) esp32-cam Webserver: MJPG: 16KB 151ms (6.6fps)[0m
+[0;32mI (29872) esp32-cam Webserver: MJPG: 16KB 162ms (6.2fps)[0m
+[0;32mI (30032) esp32-cam Webserver: MJPG: 16KB 165ms (6.1fps)[0m
+[0;32mI (30192) esp32-cam Webserver: MJPG: 16KB 155ms (6.5fps)[0m
+[0;32mI (30362) esp32-cam Webserver: MJPG: 16KB 170ms (5.9fps)[0m
+[0;32mI (30512) esp32-cam Webserver: MJPG: 17KB 151ms (6.6fps)[0m
+[0;32mI (30772) esp32-cam Webserver: MJPG: 16KB 257ms (3.9fps)[0m
+[0;32mI (30912) esp32-cam Webserver: MJPG: 16KB 141ms (7.1fps)[0m
+[0;32mI (31082) esp32-cam Webserver: MJPG: 16KB 173ms (5.8fps)[0m
+[0;32mI (31232) esp32-cam Webserver: MJPG: 17KB 148ms (6.8fps)[0m
+[0;32mI (31492) esp32-cam Webserver: MJPG: 16KB 255ms (3.9fps)[0m
+[0;32mI (31702) esp32-cam Webserver: MJPG: 16KB 211ms (4.7fps)[0m
+[0;32mI (31882) esp32-cam Webserver: MJPG: 16KB 184ms (5.4fps)[0m
+[0;32mI (32032) esp32-cam Webserver: MJPG: 17KB 149ms (6.7fps)[0m
+[0;32mI (32212) esp32-cam Webserver: MJPG: 16KB 177ms (5.6fps)[0m
+[0;32mI (32422) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (32622) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (32772) esp32-cam Webserver: MJPG: 17KB 142ms (7.0fps)[0m
+[0;32mI (32922) esp32-cam Webserver: MJPG: 17KB 157ms (6.4fps)[0m
+[0;32mI (33132) esp32-cam Webserver: MJPG: 16KB 209ms (4.8fps)[0m
+[0;32mI (33442) esp32-cam Webserver: MJPG: 17KB 304ms (3.3fps)[0m
+[0;32mI (33642) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (33852) esp32-cam Webserver: MJPG: 16KB 210ms (4.8fps)[0m
+[0;32mI (34032) esp32-cam Webserver: MJPG: 16KB 180ms (5.6fps)[0m
+[0;32mI (34202) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (34352) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (34572) esp32-cam Webserver: MJPG: 17KB 212ms (4.7fps)[0m
+[0;32mI (34772) esp32-cam Webserver: MJPG: 17KB 200ms (5.0fps)[0m
+[0;32mI (34972) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (35192) esp32-cam Webserver: MJPG: 17KB 214ms (4.7fps)[0m
+[0;32mI (35322) esp32-cam Webserver: MJPG: 17KB 127ms (7.9fps)[0m
+[0;32mI (35492) esp32-cam Webserver: MJPG: 17KB 170ms (5.9fps)[0m
+[0;32mI (35692) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (35902) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (36032) esp32-cam Webserver: MJPG: 17KB 136ms (7.4fps)[0m
+[0;32mI (36212) esp32-cam Webserver: MJPG: 17KB 173ms (5.8fps)[0m
+[0;32mI (36412) esp32-cam Webserver: MJPG: 17KB 202ms (5.0fps)[0m
+[0;32mI (36612) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (36832) esp32-cam Webserver: MJPG: 17KB 215ms (4.7fps)[0m
+[0;32mI (37002) esp32-cam Webserver: MJPG: 17KB 175ms (5.7fps)[0m
+[0;32mI (37242) esp32-cam Webserver: MJPG: 17KB 232ms (4.3fps)[0m
+[0;32mI (37462) esp32-cam Webserver: MJPG: 17KB 220ms (4.5fps)[0m
+[0;32mI (37642) esp32-cam Webserver: MJPG: 17KB 181ms (5.5fps)[0m
+[0;32mI (37842) esp32-cam Webserver: MJPG: 17KB 203ms (4.9fps)[0m
+[0;32mI (38032) esp32-cam Webserver: MJPG: 17KB 191ms (5.2fps)[0m
+[0;32mI (38252) esp32-cam Webserver: MJPG: 17KB 221ms (4.5fps)[0m
+[0;32mI (38462) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (38602) esp32-cam Webserver: MJPG: 17KB 133ms (7.5fps)[0m
+[0;32mI (38762) esp32-cam Webserver: MJPG: 17KB 168ms (6.0fps)[0m
+[0;32mI (38972) esp32-cam Webserver: MJPG: 17KB 203ms (4.9fps)[0m
+[0;32mI (39182) esp32-cam Webserver: MJPG: 17KB 217ms (4.6fps)[0m
+[0;32mI (39322) esp32-cam Webserver: MJPG: 17KB 131ms (7.6fps)[0m
+[0;32mI (39492) esp32-cam Webserver: MJPG: 17KB 171ms (5.8fps)[0m
+[0;32mI (39692) esp32-cam Webserver: MJPG: 16KB 200ms (5.0fps)[0m
+[0;32mI (39832) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (39842) esp32-cam Webserver: Motion detected![0m
+[0;32mI (39892) esp32-cam Webserver: MJPG: 16KB 202ms (5.0fps)[0m
+[0;32mI (40032) esp32-cam Webserver: MJPG: 16KB 135ms (7.4fps)[0m
+[0;32mI (40182) esp32-cam Webserver: MJPG: 16KB 157ms (6.4fps)[0m
+[0;32mI (40352) esp32-cam Webserver: MJPG: 16KB 163ms (6.1fps)[0m
+[0;32mI (40472) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (40482) esp32-cam Webserver: Motion detected![0m
+[0;32mI (40602) esp32-cam Webserver: MJPG: 15KB 253ms (4.0fps)[0m
+[0;32mI (40812) esp32-cam Webserver: MJPG: 15KB 204ms (4.9fps)[0m
+[0;32mI (41022) esp32-cam Webserver: MJPG: 17KB 214ms (4.7fps)[0m
+[0;32mI (41162) esp32-cam Webserver: MJPG: 16KB 135ms (7.4fps)[0m
+[0;32mI (41322) esp32-cam Webserver: MJPG: 17KB 169ms (5.9fps)[0m
+[0;32mI (41532) esp32-cam Webserver: MJPG: 17KB 201ms (5.0fps)[0m
+[0;32mI (41732) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (41882) esp32-cam Webserver: MJPG: 17KB 147ms (6.8fps)[0m
+[0;32mI (41992) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (41992) esp32-cam Webserver: Motion detected![0m
+[0;32mI (42032) esp32-cam Webserver: MJPG: 14KB 147ms (6.8fps)[0m
+[0;32mI (42152) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (42152) esp32-cam Webserver: Motion detected![0m
+[0;32mI (42242) esp32-cam Webserver: MJPG: 14KB 210ms (4.8fps)[0m
+[0;32mI (42452) esp32-cam Webserver: MJPG: 15KB 208ms (4.8fps)[0m
+[0;32mI (42582) esp32-cam Webserver: MJPG: 15KB 134ms (7.5fps)[0m
+[0;32mI (42752) esp32-cam Webserver: MJPG: 16KB 168ms (6.0fps)[0m
+[0;32mI (42902) esp32-cam Webserver: MJPG: 16KB 156ms (6.4fps)[0m
+[0;32mI (43072) esp32-cam Webserver: MJPG: 16KB 162ms (6.2fps)[0m
+[0;32mI (43232) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (43472) esp32-cam Webserver: MJPG: 16KB 240ms (4.2fps)[0m
+[0;32mI (43632) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (43782) esp32-cam Webserver: MJPG: 17KB 152ms (6.6fps)[0m
+[0;32mI (43982) esp32-cam Webserver: MJPG: 16KB 194ms (5.2fps)[0m
+[0;32mI (44112) esp32-cam Webserver: MJPG: 16KB 126ms (7.9fps)[0m
+[0;32mI (44262) esp32-cam Webserver: MJPG: 16KB 151ms (6.6fps)[0m
+[0;32mI (44422) esp32-cam Webserver: MJPG: 16KB 162ms (6.2fps)[0m
+[0;32mI (44602) esp32-cam Webserver: MJPG: 17KB 180ms (5.6fps)[0m
+[0;32mI (44712) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (44712) esp32-cam Webserver: Motion detected![0m
+[0;32mI (44802) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (44952) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (44952) esp32-cam Webserver: Motion detected![0m
+[0;32mI (45012) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (45112) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (45112) esp32-cam Webserver: Motion detected![0m
+[0;32mI (45222) esp32-cam Webserver: MJPG: 17KB 213ms (4.7fps)[0m
+[0;32mI (45422) esp32-cam Webserver: MJPG: 17KB 199ms (5.0fps)[0m
+[0;32mI (45512) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (45512) esp32-cam Webserver: Motion detected![0m
+[0;32mI (45562) esp32-cam Webserver: MJPG: 18KB 132ms (7.6fps)[0m
+[0;32mI (45672) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (45672) esp32-cam Webserver: Motion detected![0m
+[0;32mI (45722) esp32-cam Webserver: MJPG: 17KB 169ms (5.9fps)[0m
+[0;32mI (45932) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (46142) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (46232) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (46232) esp32-cam Webserver: Motion detected![0m
+[0;32mI (46272) esp32-cam Webserver: MJPG: 15KB 129ms (7.8fps)[0m
+[0;32mI (46392) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (46392) esp32-cam Webserver: Motion detected![0m
+[0;32mI (46432) esp32-cam Webserver: MJPG: 14KB 164ms (6.1fps)[0m
+[0;32mI (46552) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (46552) esp32-cam Webserver: Motion detected![0m
+[0;32mI (46642) esp32-cam Webserver: MJPG: 13KB 215ms (4.7fps)[0m
+[0;32mI (46792) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (46792) esp32-cam Webserver: Motion detected![0m
+[0;32mI (46852) esp32-cam Webserver: MJPG: 15KB 204ms (4.9fps)[0m
+[0;32mI (46952) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (46952) esp32-cam Webserver: Motion detected![0m
+[0;32mI (47052) esp32-cam Webserver: MJPG: 15KB 205ms (4.9fps)[0m
+[0;32mI (47192) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (47192) esp32-cam Webserver: Motion detected![0m
+[0;32mI (47222) esp32-cam Webserver: MJPG: 12KB 166ms (6.0fps)[0m
+[0;32mI (47472) esp32-cam Webserver: MJPG: 16KB 245ms (4.1fps)[0m
+[0;32mI (47672) esp32-cam Webserver: MJPG: 16KB 199ms (5.0fps)[0m
+[0;32mI (47802) esp32-cam Webserver: MJPG: 16KB 129ms (7.8fps)[0m
+[0;32mI (47952) esp32-cam Webserver: MJPG: 16KB 153ms (6.5fps)[0m
+[0;32mI (48072) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (48072) esp32-cam Webserver: Motion detected![0m
+[0;32mI (48182) esp32-cam Webserver: MJPG: 16KB 230ms (4.3fps)[0m
+[0;32mI (48312) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (48312) esp32-cam Webserver: Motion detected![0m
+[0;32mI (48392) esp32-cam Webserver: MJPG: 17KB 212ms (4.7fps)[0m
+[0;32mI (48592) esp32-cam Webserver: MJPG: 16KB 197ms (5.1fps)[0m
+[0;32mI (48742) esp32-cam Webserver: MJPG: 15KB 154ms (6.5fps)[0m
+[0;32mI (49002) esp32-cam Webserver: MJPG: 14KB 256ms (3.9fps)[0m
+[0;32mI (49212) esp32-cam Webserver: MJPG: 15KB 206ms (4.9fps)[0m
+[0;32mI (49412) esp32-cam Webserver: MJPG: 16KB 199ms (5.0fps)[0m
+[0;32mI (49512) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (49512) esp32-cam Webserver: Motion detected![0m
+[0;32mI (49552) esp32-cam Webserver: MJPG: 16KB 142ms (7.0fps)[0m
+[0;32mI (49722) esp32-cam Webserver: MJPG: 16KB 168ms (6.0fps)[0m
+[0;32mI (49862) esp32-cam Webserver: MJPG: 16KB 146ms (6.8fps)[0m
+[0;32mI (50032) esp32-cam Webserver: MJPG: 15KB 161ms (6.2fps)[0m
+[0;32mI (50232) esp32-cam Webserver: MJPG: 16KB 202ms (5.0fps)[0m
+[0;32mI (50432) esp32-cam Webserver: MJPG: 16KB 202ms (5.0fps)[0m
+[0;32mI (50552) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (50552) esp32-cam Webserver: Motion detected![0m
+[0;32mI (50592) esp32-cam Webserver: MJPG: 17KB 157ms (6.4fps)[0m
+[0;32mI (50842) esp32-cam Webserver: MJPG: 16KB 256ms (3.9fps)[0m
+[0;32mI (50952) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (50952) esp32-cam Webserver: Motion detected![0m
+[0;32mI (51052) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (51192) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (51192) esp32-cam Webserver: Motion detected![0m
+[0;32mI (51232) esp32-cam Webserver: MJPG: 17KB 174ms (5.7fps)[0m
+[0;32mI (51352) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (51352) esp32-cam Webserver: Motion detected![0m
+[0;32mI (51382) esp32-cam Webserver: MJPG: 18KB 157ms (6.4fps)[0m
+[0;32mI (51542) esp32-cam Webserver: MJPG: 17KB 159ms (6.3fps)[0m
+[0;32mI (51762) esp32-cam Webserver: MJPG: 16KB 217ms (4.6fps)[0m
+[0;32mI (51942) esp32-cam Webserver: MJPG: 16KB 179ms (5.6fps)[0m
+[0;32mI (52112) esp32-cam Webserver: MJPG: 17KB 167ms (6.0fps)[0m
+[0;32mI (52302) esp32-cam Webserver: MJPG: 17KB 195ms (5.1fps)[0m
+[0;32mI (52392) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (52392) esp32-cam Webserver: Motion detected![0m
+[0;32mI (52442) esp32-cam Webserver: MJPG: 18KB 130ms (7.7fps)[0m
+[0;32mI (52592) esp32-cam Webserver: MJPG: 17KB 153ms (6.5fps)[0m
+[0;32mI (52792) esp32-cam Webserver: MJPG: 17KB 203ms (4.9fps)[0m
+[0;32mI (53002) esp32-cam Webserver: MJPG: 17KB 208ms (4.8fps)[0m
+[0;32mI (53212) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (53412) esp32-cam Webserver: MJPG: 17KB 203ms (4.9fps)[0m
+[0;32mI (53542) esp32-cam Webserver: MJPG: 17KB 134ms (7.5fps)[0m
+[0;32mI (53712) esp32-cam Webserver: MJPG: 17KB 168ms (6.0fps)[0m
+[0;32mI (53922) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (54112) esp32-cam Webserver: MJPG: 17KB 189ms (5.3fps)[0m
+[0;32mI (54332) esp32-cam Webserver: MJPG: 16KB 224ms (4.5fps)[0m
+[0;32mI (54542) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (54682) esp32-cam Webserver: MJPG: 17KB 138ms (7.2fps)[0m
+[0;32mI (54842) esp32-cam Webserver: MJPG: 17KB 166ms (6.0fps)[0m
+[0;32mI (54982) esp32-cam Webserver: MJPG: 17KB 142ms (7.0fps)[0m
+[0;32mI (55142) esp32-cam Webserver: MJPG: 17KB 157ms (6.4fps)[0m
+[0;32mI (55352) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (55562) esp32-cam Webserver: MJPG: 17KB 216ms (4.6fps)[0m
+[0;32mI (55772) esp32-cam Webserver: MJPG: 17KB 201ms (5.0fps)[0m
+[0;32mI (55972) esp32-cam Webserver: MJPG: 16KB 200ms (5.0fps)[0m
+[0;32mI (56112) esp32-cam Webserver: MJPG: 16KB 138ms (7.2fps)[0m
+[0;32mI (56282) esp32-cam Webserver: MJPG: 17KB 173ms (5.8fps)[0m
+[0;32mI (56432) esp32-cam Webserver: MJPG: 17KB 155ms (6.5fps)[0m
+[0;32mI (56592) esp32-cam Webserver: MJPG: 17KB 152ms (6.6fps)[0m
+[0;32mI (56792) esp32-cam Webserver: MJPG: 17KB 198ms (5.1fps)[0m
+[0;32mI (56932) esp32-cam Webserver: MJPG: 17KB 139ms (7.2fps)[0m
+[0;32mI (57062) esp32-cam Webserver: MJPG: 17KB 138ms (7.2fps)[0m
+[0;32mI (57302) esp32-cam Webserver: MJPG: 17KB 232ms (4.3fps)[0m
+[0;32mI (57512) esp32-cam Webserver: MJPG: 17KB 214ms (4.7fps)[0m
+[0;32mI (57732) esp32-cam Webserver: MJPG: 17KB 224ms (4.5fps)[0m
+[0;32mI (57872) esp32-cam Webserver: MJPG: 17KB 130ms (7.7fps)[0m
+[0;32mI (58022) esp32-cam Webserver: MJPG: 17KB 158ms (6.3fps)[0m
+[0;32mI (58222) esp32-cam Webserver: MJPG: 17KB 195ms (5.1fps)[0m
+[0;32mI (58362) esp32-cam Webserver: MJPG: 17KB 136ms (7.4fps)[0m
+[0;32mI (58532) esp32-cam Webserver: MJPG: 17KB 175ms (5.7fps)[0m
+[0;32mI (58672) esp32-cam Webserver: MJPG: 17KB 134ms (7.5fps)[0m
+[0;32mI (58842) esp32-cam Webserver: MJPG: 17KB 169ms (5.9fps)[0m
+[0;32mI (58952) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (58952) esp32-cam Webserver: Motion detected![0m
+[0;32mI (58992) esp32-cam Webserver: MJPG: 18KB 151ms (6.6fps)[0m
+[0;32mI (59112) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (59112) esp32-cam Webserver: Motion detected![0m
+[0;32mI (59172) esp32-cam Webserver: MJPG: 15KB 181ms (5.5fps)[0m
+[0;32mI (59312) esp32-cam Webserver: MJPG: 16KB 136ms (7.4fps)[0m
+[0;32mI (59552) esp32-cam Webserver: MJPG: 17KB 240ms (4.2fps)[0m
+[0;32mI (59752) esp32-cam Webserver: MJPG: 17KB 208ms (4.8fps)[0m
+[0;32mI (59962) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (60102) esp32-cam Webserver: MJPG: 17KB 137ms (7.3fps)[0m
+[0;32mI (60272) esp32-cam Webserver: MJPG: 17KB 170ms (5.9fps)[0m
+[0;32mI (60482) esp32-cam Webserver: MJPG: 17KB 211ms (4.7fps)[0m
+[0;32mI (60692) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (60822) esp32-cam Webserver: MJPG: 18KB 136ms (7.4fps)[0m
+[0;32mI (60992) esp32-cam Webserver: MJPG: 17KB 163ms (6.1fps)[0m
+[0;32mI (61202) esp32-cam Webserver: MJPG: 17KB 208ms (4.8fps)[0m
+[0;32mI (61402) esp32-cam Webserver: MJPG: 17KB 200ms (5.0fps)[0m
+[0;32mI (61602) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (61802) esp32-cam Webserver: MJPG: 17KB 202ms (5.0fps)[0m
+[0;32mI (61942) esp32-cam Webserver: MJPG: 17KB 137ms (7.3fps)[0m
+[0;32mI (62072) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (62072) esp32-cam Webserver: Motion detected![0m
+[0;32mI (62102) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (62232) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (62232) esp32-cam Webserver: Motion detected![0m
+[0;32mI (62312) esp32-cam Webserver: MJPG: 16KB 210ms (4.8fps)[0m
+[0;32mI (62512) esp32-cam Webserver: MJPG: 16KB 203ms (4.9fps)[0m
+[0;32mI (62632) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (62632) esp32-cam Webserver: Motion detected![0m
+[0;32mI (62692) esp32-cam Webserver: MJPG: 18KB 178ms (5.6fps)[0m
+[0;32mI (62832) esp32-cam Webserver: MJPG: 16KB 132ms (7.6fps)[0m
+[0;32mI (62952) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (62952) esp32-cam Webserver: Motion detected![0m
+[0;32mI (62972) esp32-cam Webserver: MJPG: 11KB 148ms (6.8fps)[0m
+[0;32mI (63112) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (63112) esp32-cam Webserver: Motion detected![0m
+[0;32mI (63242) esp32-cam Webserver: MJPG: 11KB 266ms (3.8fps)[0m
+[0;32mI (63352) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (63352) esp32-cam Webserver: Motion detected![0m
+[0;32mI (63442) esp32-cam Webserver: MJPG: 13KB 199ms (5.0fps)[0m
+[0;32mI (63592) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (63592) esp32-cam Webserver: Motion detected![0m
+[0;32mI (63642) esp32-cam Webserver: MJPG: 13KB 201ms (5.0fps)[0m
+[0;32mI (63742) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (63752) esp32-cam Webserver: Motion detected![0m
+[0;32mI (63852) esp32-cam Webserver: MJPG: 13KB 204ms (4.9fps)[0m
+[0;32mI (63982) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (63992) esp32-cam Webserver: Motion detected![0m
+[0;32mI (64012) esp32-cam Webserver: MJPG: 14KB 169ms (5.9fps)[0m
+[0;32mI (64142) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (64152) esp32-cam Webserver: Motion detected![0m
+[0;32mI (64252) esp32-cam Webserver: MJPG: 13KB 238ms (4.2fps)[0m
+[0;32mI (64462) esp32-cam Webserver: MJPG: 15KB 206ms (4.9fps)[0m
+[0;32mI (64542) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (64552) esp32-cam Webserver: Motion detected![0m
+[0;32mI (64602) esp32-cam Webserver: MJPG: 15KB 136ms (7.4fps)[0m
+[0;32mI (64702) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (64712) esp32-cam Webserver: Motion detected![0m
+[0;32mI (64742) esp32-cam Webserver: MJPG: 16KB 142ms (7.0fps)[0m
+[0;32mI (64862) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (64872) esp32-cam Webserver: Motion detected![0m
+[0;32mI (64982) esp32-cam Webserver: MJPG: 16KB 237ms (4.2fps)[0m
+[0;32mI (65102) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (65112) esp32-cam Webserver: Motion detected![0m
+[0;32mI (65142) esp32-cam Webserver: MJPG: 17KB 166ms (6.0fps)[0m
+[0;32mI (65262) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (65262) esp32-cam Webserver: Motion detected![0m
+[0;32mI (65392) esp32-cam Webserver: MJPG: 17KB 252ms (4.0fps)[0m
+[0;32mI (65502) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (65502) esp32-cam Webserver: Motion detected![0m
+[0;32mI (65602) esp32-cam Webserver: MJPG: 17KB 201ms (5.0fps)[0m
+[0;32mI (65742) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (65742) esp32-cam Webserver: Motion detected![0m
+[0;32mI (65802) esp32-cam Webserver: MJPG: 18KB 201ms (5.0fps)[0m
+[0;32mI (65902) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (65902) esp32-cam Webserver: Motion detected![0m
+[0;32mI (65952) esp32-cam Webserver: MJPG: 19KB 150ms (6.7fps)[0m
+[0;32mI (66062) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (66062) esp32-cam Webserver: Motion detected![0m
+[0;32mI (66112) esp32-cam Webserver: MJPG: 18KB 159ms (6.3fps)[0m
+[0;32mI (66222) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (66222) esp32-cam Webserver: Motion detected![0m
+[0;32mI (66272) esp32-cam Webserver: MJPG: 18KB 163ms (6.1fps)[0m
+[0;32mI (66382) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (66382) esp32-cam Webserver: Motion detected![0m
+[0;32mI (66522) esp32-cam Webserver: MJPG: 18KB 246ms (4.1fps)[0m
+[0;32mI (66622) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (66622) esp32-cam Webserver: Motion detected![0m
+[0;32mI (66672) esp32-cam Webserver: MJPG: 18KB 148ms (6.8fps)[0m
+[0;32mI (66782) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (66782) esp32-cam Webserver: Motion detected![0m
+[0;32mI (66822) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (67032) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (67232) esp32-cam Webserver: MJPG: 18KB 206ms (4.9fps)[0m
+[0;32mI (67382) esp32-cam Webserver: MJPG: 18KB 148ms (6.8fps)[0m
+[0;32mI (67542) esp32-cam Webserver: MJPG: 18KB 160ms (6.2fps)[0m
+[0;32mI (67702) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (67952) esp32-cam Webserver: MJPG: 18KB 253ms (4.0fps)[0m
+[0;32mI (68102) esp32-cam Webserver: MJPG: 18KB 152ms (6.6fps)[0m
+[0;32mI (68262) esp32-cam Webserver: MJPG: 18KB 153ms (6.5fps)[0m
+[0;32mI (68462) esp32-cam Webserver: MJPG: 18KB 207ms (4.8fps)[0m
+[0;32mI (68672) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (68872) esp32-cam Webserver: MJPG: 18KB 201ms (5.0fps)[0m
+[0;32mI (69082) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (69232) esp32-cam Webserver: MJPG: 18KB 152ms (6.6fps)[0m
+[0;32mI (69482) esp32-cam Webserver: MJPG: 18KB 255ms (3.9fps)[0m
+[0;32mI (69582) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (69582) esp32-cam Webserver: Motion detected![0m
+[0;32mI (69622) esp32-cam Webserver: MJPG: 15KB 131ms (7.6fps)[0m
+[0;32mI (69742) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (69742) esp32-cam Webserver: Motion detected![0m
+[0;32mI (69772) esp32-cam Webserver: MJPG: 13KB 159ms (6.3fps)[0m
+[0;32mI (69902) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (69902) esp32-cam Webserver: Motion detected![0m
+[0;32mI (69942) esp32-cam Webserver: MJPG: 13KB 161ms (6.2fps)[0m
+[0;32mI (70062) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (70062) esp32-cam Webserver: Motion detected![0m
+[0;32mI (70092) esp32-cam Webserver: MJPG: 13KB 154ms (6.5fps)[0m
+[0;32mI (70222) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (70222) esp32-cam Webserver: Motion detected![0m
+[0;32mI (70252) esp32-cam Webserver: MJPG: 14KB 160ms (6.2fps)[0m
+[0;32mI (70502) esp32-cam Webserver: MJPG: 16KB 250ms (4.0fps)[0m
+[0;32mI (70622) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (70622) esp32-cam Webserver: Motion detected![0m
+[0;32mI (70712) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (70862) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (70862) esp32-cam Webserver: Motion detected![0m
+[0;32mI (70922) esp32-cam Webserver: MJPG: 17KB 212ms (4.7fps)[0m
+[0;32mI (71022) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71022) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71062) esp32-cam Webserver: MJPG: 18KB 138ms (7.2fps)[0m
+[0;32mI (71182) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71182) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71222) esp32-cam Webserver: MJPG: 18KB 162ms (6.2fps)[0m
+[0;32mI (71342) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71342) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71432) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (71582) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71582) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71652) esp32-cam Webserver: MJPG: 18KB 212ms (4.7fps)[0m
+[0;32mI (71742) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71742) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71792) esp32-cam Webserver: MJPG: 18KB 139ms (7.2fps)[0m
+[0;32mI (71902) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (71902) esp32-cam Webserver: Motion detected![0m
+[0;32mI (71942) esp32-cam Webserver: MJPG: 17KB 155ms (6.5fps)[0m
+[0;32mI (72062) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (72062) esp32-cam Webserver: Motion detected![0m
+[0;32mI (72102) esp32-cam Webserver: MJPG: 15KB 157ms (6.4fps)[0m
+[0;32mI (72262) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (72382) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (72382) esp32-cam Webserver: Motion detected![0m
+[0;32mI (72452) esp32-cam Webserver: MJPG: 18KB 194ms (5.2fps)[0m
+[0;32mI (72592) esp32-cam Webserver: MJPG: 18KB 131ms (7.6fps)[0m
+[0;32mI (72762) esp32-cam Webserver: MJPG: 18KB 175ms (5.7fps)[0m
+[0;32mI (72902) esp32-cam Webserver: MJPG: 17KB 134ms (7.5fps)[0m
+[0;32mI (73022) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (73022) esp32-cam Webserver: Motion detected![0m
+[0;32mI (73072) esp32-cam Webserver: MJPG: 16KB 175ms (5.7fps)[0m
+[0;32mI (73272) esp32-cam Webserver: MJPG: 17KB 198ms (5.1fps)[0m
+[0;32mI (73472) esp32-cam Webserver: MJPG: 18KB 200ms (5.0fps)[0m
+[0;32mI (73622) esp32-cam Webserver: MJPG: 18KB 148ms (6.8fps)[0m
+[0;32mI (73782) esp32-cam Webserver: MJPG: 17KB 157ms (6.4fps)[0m
+[0;32mI (73902) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (73902) esp32-cam Webserver: Motion detected![0m
+[0;32mI (73942) esp32-cam Webserver: MJPG: 15KB 160ms (6.2fps)[0m
+[0;32mI (74062) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (74062) esp32-cam Webserver: Motion detected![0m
+[0;32mI (74102) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (74222) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (74222) esp32-cam Webserver: Motion detected![0m
+[0;32mI (74292) esp32-cam Webserver: MJPG: 15KB 190ms (5.3fps)[0m
+[0;32mI (74432) esp32-cam Webserver: MJPG: 16KB 136ms (7.4fps)[0m
+[0;32mI (74582) esp32-cam Webserver: MJPG: 17KB 151ms (6.6fps)[0m
+[0;32mI (74702) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (74702) esp32-cam Webserver: Motion detected![0m
+[0;32mI (74802) esp32-cam Webserver: MJPG: 15KB 227ms (4.4fps)[0m
+[0;32mI (74972) esp32-cam Webserver: MJPG: 16KB 163ms (6.1fps)[0m
+[0;32mI (75132) esp32-cam Webserver: MJPG: 16KB 157ms (6.4fps)[0m
+[0;32mI (75302) esp32-cam Webserver: MJPG: 17KB 177ms (5.6fps)[0m
+[0;32mI (75452) esp32-cam Webserver: MJPG: 17KB 147ms (6.8fps)[0m
+[0;32mI (75582) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (75582) esp32-cam Webserver: Motion detected![0m
+[0;32mI (75642) esp32-cam Webserver: MJPG: 18KB 189ms (5.3fps)[0m
+[0;32mI (75742) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (75742) esp32-cam Webserver: Motion detected![0m
+[0;32mI (75832) esp32-cam Webserver: MJPG: 17KB 193ms (5.2fps)[0m
+[0;32mI (76042) esp32-cam Webserver: MJPG: 17KB 201ms (5.0fps)[0m
+[0;32mI (76172) esp32-cam Webserver: MJPG: 17KB 136ms (7.4fps)[0m
+[0;32mI (76332) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (76542) esp32-cam Webserver: MJPG: 16KB 211ms (4.7fps)[0m
+[0;32mI (76852) esp32-cam Webserver: MJPG: 16KB 307ms (3.3fps)[0m
+[0;32mI (76992) esp32-cam Webserver: MJPG: 16KB 134ms (7.5fps)[0m
+[0;32mI (77142) esp32-cam Webserver: MJPG: 17KB 152ms (6.6fps)[0m
+[0;32mI (77372) esp32-cam Webserver: MJPG: 17KB 228ms (4.4fps)[0m
+[0;32mI (77582) esp32-cam Webserver: MJPG: 16KB 211ms (4.7fps)[0m
+[0;32mI (77782) esp32-cam Webserver: MJPG: 17KB 200ms (5.0fps)[0m
+[0;32mI (77932) esp32-cam Webserver: MJPG: 17KB 154ms (6.5fps)[0m
+[0;32mI (78092) esp32-cam Webserver: MJPG: 16KB 160ms (6.2fps)[0m
+[0;32mI (78282) esp32-cam Webserver: MJPG: 16KB 191ms (5.2fps)[0m
+[0;32mI (78382) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (78382) esp32-cam Webserver: Motion detected![0m
+[0;32mI (78432) esp32-cam Webserver: MJPG: 17KB 140ms (7.1fps)[0m
+[0;32mI (78602) esp32-cam Webserver: MJPG: 17KB 171ms (5.8fps)[0m
+[0;32mI (78802) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (79002) esp32-cam Webserver: MJPG: 17KB 202ms (5.0fps)[0m
+[0;32mI (79142) esp32-cam Webserver: MJPG: 17KB 130ms (7.7fps)[0m
+[0;32mI (79312) esp32-cam Webserver: MJPG: 16KB 178ms (5.6fps)[0m
+[0;32mI (79452) esp32-cam Webserver: MJPG: 17KB 139ms (7.2fps)[0m
+[0;32mI (79612) esp32-cam Webserver: MJPG: 16KB 161ms (6.2fps)[0m
+[0;32mI (79772) esp32-cam Webserver: MJPG: 17KB 156ms (6.4fps)[0m
+[0;32mI (80032) esp32-cam Webserver: MJPG: 16KB 255ms (3.9fps)[0m
+[0;32mI (80142) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (80142) esp32-cam Webserver: Motion detected![0m
+[0;32mI (80172) esp32-cam Webserver: MJPG: 15KB 145ms (6.9fps)[0m
+[0;32mI (80342) esp32-cam Webserver: MJPG: 17KB 169ms (5.9fps)[0m
+[0;32mI (80542) esp32-cam Webserver: MJPG: 16KB 194ms (5.2fps)[0m
+[0;32mI (80672) esp32-cam Webserver: MJPG: 17KB 129ms (7.8fps)[0m
+[0;32mI (80852) esp32-cam Webserver: MJPG: 17KB 188ms (5.3fps)[0m
+[0;32mI (80942) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (80942) esp32-cam Webserver: Motion detected![0m
+[0;32mI (81002) esp32-cam Webserver: MJPG: 15KB 141ms (7.1fps)[0m
+[0;32mI (81142) esp32-cam Webserver: MJPG: 16KB 140ms (7.1fps)[0m
+[0;32mI (81262) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (81262) esp32-cam Webserver: Motion detected![0m
+[0;32mI (81362) esp32-cam Webserver: MJPG: 15KB 220ms (4.5fps)[0m
+[0;32mI (81532) esp32-cam Webserver: MJPG: 17KB 173ms (5.8fps)[0m
+[0;32mI (81662) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (81662) esp32-cam Webserver: Motion detected![0m
+[0;32mI (81692) esp32-cam Webserver: MJPG: 17KB 159ms (6.3fps)[0m
+[0;32mI (81822) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (81822) esp32-cam Webserver: Motion detected![0m
+[0;32mI (81872) esp32-cam Webserver: MJPG: 17KB 183ms (5.5fps)[0m
+[0;32mI (82082) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (82282) esp32-cam Webserver: MJPG: 16KB 199ms (5.0fps)[0m
+[0;32mI (82382) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (82382) esp32-cam Webserver: Motion detected![0m
+[0;32mI (82412) esp32-cam Webserver: MJPG: 18KB 137ms (7.3fps)[0m
+[0;32mI (82542) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (82542) esp32-cam Webserver: Motion detected![0m
+[0;32mI (82592) esp32-cam Webserver: MJPG: 18KB 173ms (5.8fps)[0m
+[0;32mI (82792) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (83002) esp32-cam Webserver: MJPG: 17KB 208ms (4.8fps)[0m
+[0;32mI (83102) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (83102) esp32-cam Webserver: Motion detected![0m
+[0;32mI (83142) esp32-cam Webserver: MJPG: 18KB 133ms (7.5fps)[0m
+[0;32mI (83262) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (83262) esp32-cam Webserver: Motion detected![0m
+[0;32mI (83312) esp32-cam Webserver: MJPG: 18KB 173ms (5.8fps)[0m
+[0;32mI (83422) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (83422) esp32-cam Webserver: Motion detected![0m
+[0;32mI (83452) esp32-cam Webserver: MJPG: 18KB 143ms (7.0fps)[0m
+[0;32mI (83612) esp32-cam Webserver: MJPG: 18KB 159ms (6.3fps)[0m
+[0;32mI (83822) esp32-cam Webserver: MJPG: 18KB 206ms (4.9fps)[0m
+[0;32mI (84012) esp32-cam Webserver: MJPG: 18KB 195ms (5.1fps)[0m
+[0;32mI (84172) esp32-cam Webserver: MJPG: 18KB 152ms (6.6fps)[0m
+[0;32mI (84332) esp32-cam Webserver: MJPG: 18KB 163ms (6.1fps)[0m
+[0;32mI (84542) esp32-cam Webserver: MJPG: 18KB 206ms (4.9fps)[0m
+[0;32mI (84742) esp32-cam Webserver: MJPG: 18KB 205ms (4.9fps)[0m
+[0;32mI (84952) esp32-cam Webserver: MJPG: 18KB 206ms (4.9fps)[0m
+[0;32mI (85142) esp32-cam Webserver: MJPG: 18KB 186ms (5.4fps)[0m
+[0;32mI (85312) esp32-cam Webserver: MJPG: 18KB 173ms (5.8fps)[0m
+[0;32mI (85462) esp32-cam Webserver: MJPG: 19KB 147ms (6.8fps)[0m
+[0;32mI (85612) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (85772) esp32-cam Webserver: MJPG: 18KB 159ms (6.3fps)[0m
+[0;32mI (85932) esp32-cam Webserver: MJPG: 18KB 158ms (6.3fps)[0m
+[0;32mI (86092) esp32-cam Webserver: MJPG: 18KB 159ms (6.3fps)[0m
+[0;32mI (86252) esp32-cam Webserver: MJPG: 18KB 157ms (6.4fps)[0m
+[0;32mI (86492) esp32-cam Webserver: MJPG: 18KB 245ms (4.1fps)[0m
+[0;32mI (86652) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (86782) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (86782) esp32-cam Webserver: Motion detected![0m
+[0;32mI (86892) esp32-cam Webserver: MJPG: 16KB 240ms (4.2fps)[0m
+[0;32mI (87102) esp32-cam Webserver: MJPG: 17KB 210ms (4.8fps)[0m
+[0;32mI (87302) esp32-cam Webserver: MJPG: 17KB 204ms (4.9fps)[0m
+[0;32mI (87422) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (87422) esp32-cam Webserver: Motion detected![0m
+[0;32mI (87502) esp32-cam Webserver: MJPG: 16KB 194ms (5.2fps)[0m
+[0;32mI (87662) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (87662) esp32-cam Webserver: Motion detected![0m
+[0;32mI (87702) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (87852) esp32-cam Webserver: MJPG: 17KB 141ms (7.1fps)[0m
+[0;32mI (88012) esp32-cam Webserver: MJPG: 17KB 168ms (6.0fps)[0m
+[0;32mI (88172) esp32-cam Webserver: MJPG: 17KB 157ms (6.4fps)[0m
+[0;32mI (88432) esp32-cam Webserver: MJPG: 17KB 255ms (3.9fps)[0m
+[0;32mI (88632) esp32-cam Webserver: MJPG: 17KB 199ms (5.0fps)[0m
+[0;32mI (88832) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (88932) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (88942) esp32-cam Webserver: Motion detected![0m
+[0;32mI (89042) esp32-cam Webserver: MJPG: 18KB 207ms (4.8fps)[0m
+[0;32mI (89212) esp32-cam Webserver: MJPG: 16KB 168ms (6.0fps)[0m
+[0;32mI (89452) esp32-cam Webserver: MJPG: 16KB 238ms (4.2fps)[0m
+[0;32mI (89662) esp32-cam Webserver: MJPG: 16KB 208ms (4.8fps)[0m
+[0;32mI (89862) esp32-cam Webserver: MJPG: 16KB 201ms (5.0fps)[0m
+[0;32mI (90062) esp32-cam Webserver: MJPG: 16KB 201ms (5.0fps)[0m
+[0;32mI (90272) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (90372) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (90382) esp32-cam Webserver: Motion detected![0m
+[0;32mI (90472) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (90682) esp32-cam Webserver: MJPG: 17KB 208ms (4.8fps)[0m
+[0;32mI (90822) esp32-cam Webserver: MJPG: 18KB 133ms (7.5fps)[0m
+[0;32mI (90992) esp32-cam Webserver: MJPG: 17KB 170ms (5.9fps)[0m
+[0;32mI (91132) esp32-cam Webserver: MJPG: 17KB 144ms (6.9fps)[0m
+[0;32mI (91292) esp32-cam Webserver: MJPG: 17KB 159ms (6.3fps)[0m
+[0;32mI (91412) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (91412) esp32-cam Webserver: Motion detected![0m
+[0;32mI (91502) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (91712) esp32-cam Webserver: MJPG: 17KB 209ms (4.8fps)[0m
+[0;32mI (91912) esp32-cam Webserver: MJPG: 16KB 207ms (4.8fps)[0m
+[0;32mI (92122) esp32-cam Webserver: MJPG: 18KB 200ms (5.0fps)[0m
+[0;32mI (92252) esp32-cam Webserver: MJPG: 17KB 133ms (7.5fps)[0m
+[0;32mI (92422) esp32-cam Webserver: MJPG: 17KB 170ms (5.9fps)[0m
+[0;32mI (92532) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (92532) esp32-cam Webserver: Motion detected![0m
+[0;32mI (92622) esp32-cam Webserver: MJPG: 15KB 203ms (4.9fps)[0m
+[0;32mI (92832) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (93042) esp32-cam Webserver: MJPG: 17KB 213ms (4.7fps)[0m
+[0;32mI (93172) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (93172) esp32-cam Webserver: Motion detected![0m
+[0;32mI (93212) esp32-cam Webserver: MJPG: 18KB 164ms (6.1fps)[0m
+[0;32mI (93332) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (93332) esp32-cam Webserver: Motion detected![0m
+[0;32mI (93452) esp32-cam Webserver: MJPG: 18KB 237ms (4.2fps)[0m
+[0;32mI (93612) esp32-cam Webserver: MJPG: 17KB 163ms (6.1fps)[0m
+[0;32mI (93862) esp32-cam Webserver: MJPG: 18KB 245ms (4.1fps)[0m
+[0;32mI (94012) esp32-cam Webserver: MJPG: 17KB 152ms (6.6fps)[0m
+[0;32mI (94162) esp32-cam Webserver: MJPG: 17KB 153ms (6.5fps)[0m
+[0;32mI (94372) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (94512) esp32-cam Webserver: MJPG: 17KB 137ms (7.3fps)[0m
+[0;32mI (94682) esp32-cam Webserver: MJPG: 18KB 170ms (5.9fps)[0m
+[0;32mI (94812) esp32-cam Webserver: MJPG: 17KB 129ms (7.8fps)[0m
+[0;32mI (94982) esp32-cam Webserver: MJPG: 17KB 174ms (5.7fps)[0m
+[0;32mI (95092) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (95092) esp32-cam Webserver: Motion detected![0m
+[0;32mI (95192) esp32-cam Webserver: MJPG: 16KB 206ms (4.9fps)[0m
+[0;32mI (95392) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (95532) esp32-cam Webserver: MJPG: 18KB 134ms (7.5fps)[0m
+[0;32mI (95702) esp32-cam Webserver: MJPG: 18KB 173ms (5.8fps)[0m
+[0;32mI (95852) esp32-cam Webserver: MJPG: 18KB 147ms (6.8fps)[0m
+[0;32mI (96012) esp32-cam Webserver: MJPG: 18KB 164ms (6.1fps)[0m
+[0;32mI (96162) esp32-cam Webserver: MJPG: 18KB 154ms (6.5fps)[0m
+[0;32mI (96412) esp32-cam Webserver: MJPG: 18KB 248ms (4.0fps)[0m
+[0;32mI (96622) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (96822) esp32-cam Webserver: MJPG: 18KB 203ms (4.9fps)[0m
+[0;32mI (96962) esp32-cam Webserver: MJPG: 18KB 142ms (7.0fps)[0m
+[0;32mI (97132) esp32-cam Webserver: MJPG: 18KB 169ms (5.9fps)[0m
+[0;32mI (97292) esp32-cam Webserver: MJPG: 18KB 152ms (6.6fps)[0m
+[0;32mI (97452) esp32-cam Webserver: MJPG: 18KB 161ms (6.2fps)[0m
+[0;32mI (97602) esp32-cam Webserver: MJPG: 17KB 154ms (6.5fps)[0m
+[0;32mI (97732) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (97732) esp32-cam Webserver: Motion detected![0m
+[0;32mI (97852) esp32-cam Webserver: MJPG: 17KB 242ms (4.1fps)[0m
+[0;32mI (98002) esp32-cam Webserver: MJPG: 17KB 158ms (6.3fps)[0m
+[0;32mI (98162) esp32-cam Webserver: MJPG: 18KB 159ms (6.3fps)[0m
+[0;32mI (98362) esp32-cam Webserver: MJPG: 18KB 200ms (5.0fps)[0m
+[0;32mI (98502) esp32-cam Webserver: MJPG: 18KB 131ms (7.6fps)[0m
+[0;32mI (98612) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (98612) esp32-cam Webserver: Motion detected![0m
+[0;32mI (98652) esp32-cam Webserver: MJPG: 17KB 154ms (6.5fps)[0m
+[0;32mI (98882) esp32-cam Webserver: MJPG: 17KB 230ms (4.3fps)[0m
+[0;32mI (99092) esp32-cam Webserver: MJPG: 17KB 206ms (4.9fps)[0m
+[0;32mI (99172) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (99172) esp32-cam Webserver: Motion detected![0m
+[0;32mI (99232) esp32-cam Webserver: MJPG: 16KB 138ms (7.2fps)[0m
+[0;32mI (99332) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (99332) esp32-cam Webserver: Motion detected![0m
+[0;32mI (99372) esp32-cam Webserver: MJPG: 16KB 142ms (7.0fps)[0m
+[0;32mI (99522) esp32-cam Webserver: MJPG: 16KB 157ms (6.4fps)[0m
+[0;32mI (99692) esp32-cam Webserver: MJPG: 17KB 167ms (6.0fps)[0m
+[0;32mI (99892) esp32-cam Webserver: MJPG: 16KB 202ms (5.0fps)[0m
+[0;32mI (100052) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (100052) esp32-cam Webserver: Motion detected![0m
+[0;32mI (100102) esp32-cam Webserver: MJPG: 16KB 204ms (4.9fps)[0m
+[0;32mI (100212) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (100212) esp32-cam Webserver: Motion detected![0m
+[0;32mI (100242) esp32-cam Webserver: MJPG: 16KB 140ms (7.1fps)[0m
+[0;32mI (100412) esp32-cam Webserver: MJPG: 16KB 168ms (6.0fps)[0m
+[0;32mI (100632) esp32-cam Webserver: MJPG: 17KB 218ms (4.6fps)[0m
+[0;32mI (100812) esp32-cam Webserver: MJPG: 16KB 185ms (5.4fps)[0m
+[0;32mI (100932) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (100932) esp32-cam Webserver: Motion detected![0m
+[0;32mI (100972) esp32-cam Webserver: MJPG: 21KB 162ms (6.2fps)[0m
+[0;32mI (101092) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (101092) esp32-cam Webserver: Motion detected![0m
+[0;32mI (101122) esp32-cam Webserver: MJPG: 15KB 150ms (6.7fps)[0m
+[0;32mI (101292) esp32-cam Webserver: MJPG: 17KB 161ms (6.2fps)[0m
+[0;32mI (101532) esp32-cam Webserver: MJPG: 17KB 245ms (4.1fps)[0m
+[0;32mI (101652) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (101652) esp32-cam Webserver: Motion detected![0m
+[0;32mI (101742) esp32-cam Webserver: MJPG: 18KB 207ms (4.8fps)[0m
+[0;32mI (101952) esp32-cam Webserver: MJPG: 17KB 213ms (4.7fps)[0m
+[0;32mI (102092) esp32-cam Webserver: MJPG: 17KB 138ms (7.2fps)[0m
+[0;32mI (102212) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (102212) esp32-cam Webserver: Motion detected![0m
+[0;32mI (102252) esp32-cam Webserver: MJPG: 16KB 164ms (6.1fps)[0m
+[0;32mI (102412) esp32-cam Webserver: MJPG: 17KB 150ms (6.7fps)[0m
+[0;32mI (102572) esp32-cam Webserver: MJPG: 17KB 162ms (6.2fps)[0m
+[0;32mI (102692) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (102692) esp32-cam Webserver: Motion detected![0m
+[0;32mI (102762) esp32-cam Webserver: MJPG: 16KB 192ms (5.2fps)[0m
+[0;32mI (102902) esp32-cam Webserver: MJPG: 17KB 134ms (7.5fps)[0m
+[0;32mI (103082) esp32-cam Webserver: MJPG: 17KB 181ms (5.5fps)[0m
+[0;32mI (103212) esp32-cam Webserver: MJPG: 18KB 128ms (7.8fps)[0m
+[0;32mI (103372) esp32-cam Webserver: MJPG: 18KB 162ms (6.2fps)[0m
+[0;32mI (103582) esp32-cam Webserver: MJPG: 17KB 216ms (4.6fps)[0m
+[0;32mI (103792) esp32-cam Webserver: MJPG: 17KB 209ms (4.8fps)[0m
+[0;32mI (103932) esp32-cam Webserver: MJPG: 17KB 131ms (7.6fps)[0m
+[0;32mI (104092) esp32-cam Webserver: MJPG: 18KB 160ms (6.2fps)[0m
+[0;32mI (104212) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (104212) esp32-cam Webserver: Motion detected![0m
+[0;32mI (104252) esp32-cam Webserver: MJPG: 20KB 162ms (6.2fps)[0m
+[0;32mI (104512) esp32-cam Webserver: MJPG: 17KB 257ms (3.9fps)[0m
+[0;32mI (104712) esp32-cam Webserver: MJPG: 18KB 201ms (5.0fps)[0m
+[0;32mI (104912) esp32-cam Webserver: MJPG: 18KB 198ms (5.1fps)[0m
+[0;32mI (105082) esp32-cam Webserver: MJPG: 17KB 177ms (5.6fps)[0m
+[0;32mI (105222) esp32-cam Webserver: MJPG: 18KB 131ms (7.6fps)[0m
+[0;32mI (105362) esp32-cam Webserver: MJPG: 18KB 143ms (7.0fps)[0m
+[0;32mI (105522) esp32-cam Webserver: MJPG: 18KB 162ms (6.2fps)[0m
+[0;32mI (105732) esp32-cam Webserver: MJPG: 18KB 212ms (4.7fps)[0m
+[0;32mI (105942) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (106142) esp32-cam Webserver: MJPG: 18KB 205ms (4.9fps)[0m
+[0;32mI (106352) esp32-cam Webserver: MJPG: 18KB 203ms (4.9fps)[0m
+[0;32mI (106492) esp32-cam Webserver: MJPG: 17KB 138ms (7.2fps)[0m
+[0;32mI (106672) esp32-cam Webserver: MJPG: 17KB 180ms (5.6fps)[0m
+[0;32mI (106802) esp32-cam Webserver: MJPG: 18KB 137ms (7.3fps)[0m
+[0;32mI (107072) esp32-cam Webserver: MJPG: 18KB 263ms (3.8fps)[0m
+[0;32mI (107202) esp32-cam Webserver: MJPG: 18KB 130ms (7.7fps)[0m
+[0;32mI (107362) esp32-cam Webserver: MJPG: 17KB 165ms (6.1fps)[0m
+[0;32mI (107582) esp32-cam Webserver: MJPG: 18KB 216ms (4.6fps)[0m
+[0;32mI (107782) esp32-cam Webserver: MJPG: 17KB 205ms (4.9fps)[0m
+[0;32mI (107992) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (108192) esp32-cam Webserver: MJPG: 18KB 202ms (5.0fps)[0m
+[0;32mI (108332) esp32-cam Webserver: MJPG: 18KB 131ms (7.6fps)[0m
+[0;32mI (108502) esp32-cam Webserver: MJPG: 18KB 172ms (5.8fps)[0m
+[0;32mI (108702) esp32-cam Webserver: MJPG: 18KB 207ms (4.8fps)[0m
+[0;32mI (108922) esp32-cam Webserver: MJPG: 17KB 211ms (4.7fps)[0m
+[0;32mI (109062) esp32-cam Webserver: MJPG: 18KB 138ms (7.2fps)[0m
+[0;32mI (109212) esp32-cam Webserver: MJPG: 18KB 150ms (6.7fps)[0m
+[0;32mI (109362) esp32-cam Webserver: MJPG: 18KB 155ms (6.5fps)[0m
+[0;32mI (109522) esp32-cam Webserver: MJPG: 18KB 158ms (6.3fps)[0m
+[0;32mI (109682) esp32-cam Webserver: MJPG: 18KB 164ms (6.1fps)[0m
+[0;32mI (109842) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (110032) esp32-cam Webserver: MJPG: 18KB 194ms (5.2fps)[0m
+[0;32mI (110172) esp32-cam Webserver: MJPG: 18KB 130ms (7.7fps)[0m
+[0;32mI (110352) esp32-cam Webserver: MJPG: 18KB 181ms (5.5fps)[0m
+[0;32mI (110492) esp32-cam Webserver: MJPG: 18KB 138ms (7.2fps)[0m
+[0;32mI (110652) esp32-cam Webserver: MJPG: 17KB 165ms (6.1fps)[0m
+[0;32mI (110862) esp32-cam Webserver: MJPG: 18KB 204ms (4.9fps)[0m
+[0;32mI (111062) esp32-cam Webserver: MJPG: 18KB 201ms (5.0fps)[0m
+[0;32mI (111202) esp32-cam Webserver: MJPG: 18KB 139ms (7.2fps)[0m
+[0;32mI (111362) esp32-cam Webserver: MJPG: 17KB 167ms (6.0fps)[0m
+[0;32mI (111522) esp32-cam Webserver: MJPG: 18KB 155ms (6.5fps)[0m
+[0;32mI (111782) esp32-cam Webserver: MJPG: 17KB 256ms (3.9fps)[0m
+[0;32mI (111982) esp32-cam Webserver: MJPG: 17KB 202ms (5.0fps)[0m
+[0;32mI (112192) esp32-cam Webserver: MJPG: 18KB 207ms (4.8fps)[0m
+[0;32mI (112402) esp32-cam Webserver: MJPG: 18KB 209ms (4.8fps)[0m
+[0;32mI (112592) esp32-cam Webserver: MJPG: 18KB 194ms (5.2fps)[0m
+[0;32mI (112732) esp32-cam Webserver: MJPG: 18KB 133ms (7.5fps)[0m
+[0;32mI (112902) esp32-cam Webserver: MJPG: 18KB 172ms (5.8fps)[0m
+[0;32mI (113102) esp32-cam Webserver: MJPG: 18KB 205ms (4.9fps)[0m
+[0;32mI (113352) esp32-cam Webserver: MJPG: 18KB 242ms (4.1fps)[0m
+[0;32mI (113622) esp32-cam Webserver: MJPG: 18KB 270ms (3.7fps)[0m
+[0;32mI (113832) esp32-cam Webserver: MJPG: 18KB 214ms (4.7fps)[0m
+[0;32mI (114032) esp32-cam Webserver: MJPG: 18KB 203ms (4.9fps)[0m
+[0;32mI (114182) esp32-cam Webserver: MJPG: 17KB 142ms (7.0fps)[0m
+[0;32mI (114342) esp32-cam Webserver: MJPG: 17KB 160ms (6.2fps)[0m
+[0;32mI (114542) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (114742) esp32-cam Webserver: MJPG: 17KB 200ms (5.0fps)[0m
+[0;32mI (114962) esp32-cam Webserver: MJPG: 17KB 212ms (4.7fps)[0m
+[0;32mI (115082) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (115082) esp32-cam Webserver: Motion detected![0m
+[0;32mI (115152) esp32-cam Webserver: MJPG: 15KB 193ms (5.2fps)[0m
+[0;32mI (115242) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (115252) esp32-cam Webserver: Motion detected![0m
+[0;32mI (115292) esp32-cam Webserver: MJPG: 16KB 134ms (7.5fps)[0m
+[0;32mI (115442) esp32-cam Webserver: MJPG: 16KB 157ms (6.4fps)[0m
+[0;32mI (115672) esp32-cam Webserver: MJPG: 17KB 223ms (4.5fps)[0m
+[0;32mI (115872) esp32-cam Webserver: MJPG: 16KB 205ms (4.9fps)[0m
+[0;32mI (116012) esp32-cam Webserver: MJPG: 17KB 132ms (7.6fps)[0m
+[0;32mI (116182) esp32-cam Webserver: MJPG: 17KB 175ms (5.7fps)[0m
+[0;32mI (116322) esp32-cam Webserver: MJPG: 17KB 134ms (7.5fps)[0m
+[0;32mI (116492) esp32-cam Webserver: MJPG: 16KB 172ms (5.8fps)[0m
+[0;32mI (116602) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (116602) esp32-cam Webserver: Motion detected![0m
+[0;32mI (116662) esp32-cam Webserver: MJPG: 18KB 167ms (6.0fps)[0m
+[0;32mI (116802) esp32-cam Webserver: MJPG: 17KB 144ms (6.9fps)[0m
+[0;32mI (117002) esp32-cam Webserver: MJPG: 18KB 198ms (5.1fps)[0m
+[0;32mI (117142) esp32-cam Webserver: MJPG: 18KB 135ms (7.4fps)[0m
+[0;32mI (117242) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (117242) esp32-cam Webserver: Motion detected![0m
+[0;32mI (117292) esp32-cam Webserver: MJPG: 18KB 151ms (6.6fps)[0m
+[0;32mI (117402) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (117402) esp32-cam Webserver: Motion detected![0m
+[0;32mI (117442) esp32-cam Webserver: MJPG: 19KB 153ms (6.5fps)[0m
+[0;32mI (117602) esp32-cam Webserver: MJPG: 18KB 161ms (6.2fps)[0m
+[0;32mI (117762) esp32-cam Webserver: MJPG: 18KB 158ms (6.3fps)[0m
+[0;32mI (117922) esp32-cam Webserver: MJPG: 18KB 160ms (6.2fps)[0m
+[0;32mI (118132) esp32-cam Webserver: MJPG: 18KB 205ms (4.9fps)[0m
+[0;32mI (118332) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (118482) esp32-cam Webserver: MJPG: 18KB 150ms (6.7fps)[0m
+[0;32mI (118642) esp32-cam Webserver: MJPG: 18KB 151ms (6.6fps)[0m
+[0;32mI (118842) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (119052) esp32-cam Webserver: MJPG: 18KB 201ms (5.0fps)[0m
+[0;32mI (119202) esp32-cam Webserver: MJPG: 18KB 153ms (6.5fps)[0m
+[0;32mI (119372) esp32-cam Webserver: MJPG: 18KB 167ms (6.0fps)[0m
+[0;32mI (119532) esp32-cam Webserver: MJPG: 18KB 161ms (6.2fps)[0m
+[0;32mI (119642) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (119642) esp32-cam Webserver: Motion detected![0m
+[0;32mI (119762) esp32-cam Webserver: MJPG: 16KB 235ms (4.3fps)[0m
+[0;32mI (119882) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (119882) esp32-cam Webserver: Motion detected![0m
+[0;32mI (119962) esp32-cam Webserver: MJPG: 16KB 200ms (5.0fps)[0m
+[0;32mI (120122) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (120122) esp32-cam Webserver: Motion detected![0m
+[0;32mI (120172) esp32-cam Webserver: MJPG: 16KB 209ms (4.8fps)[0m
+[0;32mI (120382) esp32-cam Webserver: MJPG: 17KB 207ms (4.8fps)[0m
+[0;32mI (120562) esp32-cam Webserver: MJPG: 17KB 182ms (5.5fps)[0m
+[0;32mI (120722) esp32-cam Webserver: MJPG: 17KB 159ms (6.3fps)[0m
+[0;32mI (120902) esp32-cam Webserver: MJPG: 17KB 172ms (5.8fps)[0m
+[0;32mI (121002) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (121002) esp32-cam Webserver: Motion detected![0m
+[0;32mI (121052) esp32-cam Webserver: MJPG: 19KB 150ms (6.7fps)[0m
+[0;32mI (121202) esp32-cam Webserver: MJPG: 18KB 149ms (6.7fps)[0m
+[0;32mI (121402) esp32-cam Webserver: MJPG: 17KB 203ms (4.9fps)[0m
+[0;32mI (121532) esp32-cam Webserver: MJPG: 18KB 126ms (7.9fps)[0m
+[0;32mI (121712) esp32-cam Webserver: MJPG: 18KB 185ms (5.4fps)[0m
+[0;32mI (121842) esp32-cam Webserver: MJPG: 18KB 124ms (8.1fps)[0m
+[0;32mI (122012) esp32-cam Webserver: MJPG: 18KB 179ms (5.6fps)[0m
+[0;32mI (122222) esp32-cam Webserver: MJPG: 18KB 208ms (4.8fps)[0m
+[0;32mI (122392) esp32-cam Webserver: MJPG: 18KB 171ms (5.8fps)[0m
+[0;32mI (122552) esp32-cam Webserver: MJPG: 18KB 156ms (6.4fps)[0m
+[0;32mI (122742) esp32-cam Webserver: MJPG: 18KB 184ms (5.4fps)[0m
+[0;32mI (122882) esp32-cam Webserver: MJPG: 18KB 144ms (6.9fps)[0m
+[0;32mI (123042) esp32-cam Webserver: MJPG: 18KB 158ms (6.3fps)[0m
+[0;32mI (123162) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (123162) esp32-cam Webserver: Motion detected![0m
+[0;32mI (123202) esp32-cam Webserver: MJPG: 16KB 159ms (6.3fps)[0m
+[0;32mI (123452) esp32-cam Webserver: MJPG: 17KB 255ms (3.9fps)[0m
+[0;32mI (123562) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (123562) esp32-cam Webserver: Motion detected![0m
+[0;32mI (123652) esp32-cam Webserver: MJPG: 16KB 194ms (5.2fps)[0m
+[0;32mI (123802) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (123802) esp32-cam Webserver: Motion detected![0m
+[0;32mI (123862) esp32-cam Webserver: MJPG: 17KB 211ms (4.7fps)[0m
+[0;32mI (124002) esp32-cam Webserver: MJPG: 18KB 139ms (7.2fps)[0m
+[0;32mI (124162) esp32-cam Webserver: MJPG: 18KB 157ms (6.4fps)[0m
+[0;32mI (124372) esp32-cam Webserver: MJPG: 18KB 215ms (4.7fps)[0m
+[0;32mI (124562) esp32-cam Webserver: MJPG: 17KB 187ms (5.3fps)[0m
+[0;32mI (124782) esp32-cam Webserver: MJPG: 18KB 222ms (4.5fps)[0m
+[0;32mI (124992) esp32-cam Webserver: MJPG: 18KB 205ms (4.9fps)[0m
+[0;32mI (125122) esp32-cam Webserver: MJPG: 18KB 127ms (7.9fps)[0m
+[0;32mI (125282) esp32-cam Webserver: MJPG: 18KB 163ms (6.1fps)[0m
+[0;32mI (125402) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (125402) esp32-cam Webserver: Motion detected![0m
+[0;32mI (125452) esp32-cam Webserver: MJPG: 21KB 167ms (6.0fps)[0m
+[0;32mI (125542) enhanced_ota: Received /trigger_diag request[0m
+[0;32mI (125562) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (125562) esp32-cam Webserver: Motion detected![0m
+[0;32mI (125592) esp32-cam Webserver: MJPG: 16KB 145ms (6.9fps)[0m
+[0;33mW (125592) esp32-cam Webserver: Stream paused mid-connection; closing socket.[0m
+[0;33mW (125602) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;31mE (130562) esp-tls: [sock=62] select() timeout[0m
+[0;31mE (130562) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (130562) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (130562) enhanced_ota: Failed to send diagnostics: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (148472) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - Stream paused for OTA/diag[0m
+[0;33mW (148482) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (150172) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - Stream paused for OTA/diag[0m
+[0;33mW (150182) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (151402) httpd_txrx: httpd_resp_send_err: 500 Internal Server Error - Stream paused for OTA/diag[0m
+[0;33mW (151412) httpd_uri: httpd_uri: uri handler execution failed[0m

@@ -1,0 +1,78 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:57: warning: "CAM_PIN_PWDN" redefined
+   57 | #define CAM_PIN_PWDN    32
+      | 
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:14:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/camera_pins.h:5: note: this is the location of the previous definition
+    5 | #define CAM_PIN_PWDN   -1  // Power down is not used; set to -1 if not connected.
+      | 
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:124:22: error: static declaration of 'stream_paused' follows non-static declaration
+  124 | static volatile bool stream_paused = false;
+      |                      ^~~~~~~~~~~~~
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:29:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/components/ota_diag/stream_ctrl.h:6:22: note: previous declaration of 'stream_paused' with type '_Bool'
+    6 | extern volatile bool stream_paused;
+      |                      ^~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: In function 'jpg_stream_httpd_handler':
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:151:34: error: 'HTTPD_503_SERVICE_UNAVAIL' undeclared (first use in this function)
+  151 |         httpd_resp_send_err(req, HTTPD_503_SERVICE_UNAVAIL, "Stream paused for OTA/diag");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:151:34: note: each undeclared identifier is reported only once for each function it appears in
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:145:10: warning: unused variable 'part_buf' [-Wunused-variable]
+  145 |     char part_buf[64];
+      |          ^~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:144:14: warning: unused variable '_jpg_buf' [-Wunused-variable]
+  144 |     uint8_t *_jpg_buf;
+      |              ^~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:143:12: warning: unused variable '_jpg_buf_len' [-Wunused-variable]
+  143 |     size_t _jpg_buf_len;
+      |            ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:141:18: warning: unused variable 'fb' [-Wunused-variable]
+  141 |     camera_fb_t *fb = NULL;
+      |                  ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: At top level:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:161:5: error: expected identifier or '(' before 'while'
+  161 |     while (true) {
+      |     ^~~~~
+In file included from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:1:
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:242:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  242 |     ESP_ERROR_CHECK(esp_task_wdt_delete(NULL));
+      |     ^~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:242:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  242 |     ESP_ERROR_CHECK(esp_task_wdt_delete(NULL));
+      |     ^~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:243:5: error: expected identifier or '(' before 'return'
+  243 |     return res;
+      |     ^~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:244:1: error: expected identifier or '(' before '}' token
+  244 | }
+      | ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: In function 'jpg_stream_httpd_handler':
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:159:5: error: control reaches end of non-void function [-Werror=return-type]
+  159 |     }
+      |     ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: At top level:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:266:13: warning: 'wait_for_ip' defined but not used [-Wunused-function]
+  266 | static void wait_for_ip(void)
+      |             ^~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:46:20: warning: '_STREAM_PART' defined but not used [-Wunused-variable]
+   46 | static const char* _STREAM_PART = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+      |                    ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:45:20: warning: '_STREAM_BOUNDARY' defined but not used [-Wunused-variable]
+   45 | static const char* _STREAM_BOUNDARY = "\r\n--" PART_BOUNDARY "\r\n";
+      |                    ^~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

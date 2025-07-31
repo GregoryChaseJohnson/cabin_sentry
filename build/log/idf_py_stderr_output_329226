@@ -1,0 +1,70 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+[0m
+[0;33m--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008212d: panic_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/panic.c:463
+--- 0x4009096d: esp_system_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/port/esp_system_chip.c:92
+--- 0x40098c99: abort at /home/keithuncouth/esp-idf-v5.3.2/components/newlib/abort.c:38
+--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+--- 0x400faf47: httpd_uri at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_uri.c:329
+--- 0x400fb7fd: httpd_parse_req at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:663
+--- 0x400fb8a9: httpd_req_new at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:791
+--- 0x400fa4e4: httpd_sess_process at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400f965a: httpd_process_session at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:267
+--- 0x4018850f: httpd_sess_enum at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:50
+--- 0x400f9e72: httpd_server at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:317
+--- 0x400f9ee2: httpd_thread at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:339
+--- 0x40091511: vPortTaskWrapper at /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+[0m
+[0;33m--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008212d: panic_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/panic.c:463
+--- 0x4009096d: esp_system_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/port/esp_system_chip.c:92
+--- 0x40098c99: abort at /home/keithuncouth/esp-idf-v5.3.2/components/newlib/abort.c:38
+--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+--- 0x400faf47: httpd_uri at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_uri.c:329
+--- 0x400fb7fd: httpd_parse_req at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:663
+--- 0x400fb8a9: httpd_req_new at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:791
+--- 0x400fa4e4: httpd_sess_process at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400f965a: httpd_process_session at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:267
+--- 0x4018850f: httpd_sess_enum at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:50
+--- 0x400f9e72: httpd_server at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:317
+--- 0x400f9ee2: httpd_thread at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:339
+--- 0x40091511: vPortTaskWrapper at /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+[0m
+[0;33m--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x4008212d: panic_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/panic.c:463
+--- 0x4009096d: esp_system_abort at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/port/esp_system_chip.c:92
+--- 0x40098c99: abort at /home/keithuncouth/esp-idf-v5.3.2/components/newlib/abort.c:38
+--- 0x40090963: _esp_error_check_failed at /home/keithuncouth/esp-idf-v5.3.2/components/esp_system/esp_err.c:49
+--- 0x400dcbc2: jpg_stream_httpd_handler at /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:138
+--- 0x400faf47: httpd_uri at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_uri.c:329
+--- 0x400fb7fd: httpd_parse_req at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:663
+--- 0x400fb8a9: httpd_req_new at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_parse.c:791
+--- 0x400fa4e4: httpd_sess_process at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:427
+--- 0x400f965a: httpd_process_session at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:267
+--- 0x4018850f: httpd_sess_enum at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_sess.c:50
+--- 0x400f9e72: httpd_server at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:317
+--- 0x400f9ee2: httpd_thread at /home/keithuncouth/esp-idf-v5.3.2/components/esp_http_server/src/httpd_main.c:339
+--- 0x40091511: vPortTaskWrapper at /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

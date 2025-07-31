@@ -1,0 +1,3 @@
+curl -v http://192.168.12.50/trigger_diag
+  
+Change id_address for different esp_32 devices.

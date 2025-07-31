@@ -1,0 +1,2 @@
+curl http://192.168.12.50/trigger_ota
+

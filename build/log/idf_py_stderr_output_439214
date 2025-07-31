@@ -1,0 +1,113 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:225:35: error: '_jpg_buf_len' undeclared here (not in a function)
+  225 |         size_t current_jpg_size = _jpg_buf_len;
+      |                                   ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:226:9: warning: data definition has no type or storage class
+  226 |         update_file_size_buffer(current_jpg_size);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:226:9: error: type defaults to 'int' in declaration of 'update_file_size_buffer' [-Werror=implicit-int]
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:226:9: warning: parameter names (without types) in function declaration
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:226:9: error: conflicting types for 'update_file_size_buffer'; have 'int()'
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:122:6: note: previous definition of 'update_file_size_buffer' with type 'void(size_t)' {aka 'void(unsigned int)'}
+  122 | void update_file_size_buffer(size_t new_size) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:227:35: error: initializer element is not constant
+  227 |         size_t average_jpg_size = calculate_average_file_size();
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:228:9: error: expected identifier or '(' before 'if'
+  228 |         if (abs((int)current_jpg_size - (int)average_jpg_size) > FILE_SIZE_CHANGE_THRESHOLD) {
+      |         ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:236:9: error: expected identifier or '(' before 'for'
+  236 |         for (int retry_count = 0; retry_count < max_retries && res == ESP_OK; ++retry_count) {
+      |         ^~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:236:47: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+  236 |         for (int retry_count = 0; retry_count < max_retries && res == ESP_OK; ++retry_count) {
+      |                                               ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:236:79: error: expected identifier or '(' before '++' token
+  236 |         for (int retry_count = 0; retry_count < max_retries && res == ESP_OK; ++retry_count) {
+      |                                                                               ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:260:9: error: expected identifier or '(' before 'if'
+  260 |         if (fb->format != PIXFORMAT_JPEG) {
+      |         ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:263:9: warning: data definition has no type or storage class
+  263 |         esp_camera_fb_return(fb);
+      |         ^~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:263:9: error: type defaults to 'int' in declaration of 'esp_camera_fb_return' [-Werror=implicit-int]
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:263:9: warning: parameter names (without types) in function declaration
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:263:9: error: conflicting types for 'esp_camera_fb_return'; have 'int()'
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:11:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/components/esp32-camera/driver/include/esp_camera.h:215:6: note: previous declaration of 'esp_camera_fb_return' with type 'void(camera_fb_t *)'
+  215 | void esp_camera_fb_return(camera_fb_t * fb);
+      |      ^~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:265:9: error: expected identifier or '(' before 'if'
+  265 |         if (res != ESP_OK) {
+      |         ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:269:26: error: initializer element is not constant
+  269 |         int64_t fr_end = esp_timer_get_time();
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:270:40: error: 'frame_start_time' undeclared here (not in a function); did you mean 'frame_time'?
+  270 |         int64_t frame_time = (fr_end - frame_start_time) / 1000;
+      |                                        ^~~~~~~~~~~~~~~~
+      |                                        frame_time
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:3:
+/home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log.h:462:54: error: expected identifier or '(' before 'do'
+  462 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^~
+/home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:271:9: note: in expansion of macro 'ESP_LOGI'
+  271 |         ESP_LOGI(CAM_TAG, "MJPG: %luKB %lums (%.1ffps)",
+      |         ^~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log.h:464:7: error: expected identifier or '(' before 'while'
+  464 |     } while(0)
+      |       ^~~~~
+/home/keithuncouth/esp-idf-v5.3.2/components/log/include/esp_log.h:367:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  367 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:271:9: note: in expansion of macro 'ESP_LOGI'
+  271 |         ESP_LOGI(CAM_TAG, "MJPG: %luKB %lums (%.1ffps)",
+      |         ^~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:50:31: error: initializer element is not constant
+   50 | #define DESIRED_FRAME_TIME_MS (1000/ DESIRED_FPS)
+      |                               ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:276:30: note: in expansion of macro 'DESIRED_FRAME_TIME_MS'
+  276 |         int64_t delay_time = DESIRED_FRAME_TIME_MS - frame_time;
+      |                              ^~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:277:9: error: expected identifier or '(' before 'if'
+  277 |         if (delay_time > 0) {
+      |         ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:280:5: error: expected identifier or '(' before '}' token
+  280 |     }
+      |     ^
+In file included from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:1:
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:282:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  282 |     ESP_ERROR_CHECK(esp_task_wdt_delete(NULL));
+      |     ^~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:282:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  282 |     ESP_ERROR_CHECK(esp_task_wdt_delete(NULL));
+      |     ^~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:283:5: error: expected identifier or '(' before 'return'
+  283 |     return res;
+      |     ^~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:284:1: error: expected identifier or '(' before '}' token
+  284 | }
+      | ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:306:13: warning: 'wait_for_ip' defined but not used [-Wunused-function]
+  306 | static void wait_for_ip(void)
+      |             ^~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

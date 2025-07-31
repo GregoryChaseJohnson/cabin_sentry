@@ -1,0 +1,46 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:55: warning: "CAM_PIN_PWDN" redefined
+   55 | #define CAM_PIN_PWDN    32
+      | 
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:14:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/camera_pins.h:5: note: this is the location of the previous definition
+    5 | #define CAM_PIN_PWDN   -1  // Power down is not used; set to -1 if not connected.
+      | 
+In file included from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/keithuncouth/esp-idf-v5.3.2/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:1:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: In function 'app_main':
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:52:24: warning: passing argument 1 of 'esp_task_wdt_init' makes pointer from integer without a cast [-Wint-conversion]
+   52 | #define TWDT_TIMEOUT_S 5
+      |                        ^
+      |                        |
+      |                        int
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:298:40: note: in expansion of macro 'TWDT_TIMEOUT_S'
+  298 |      ESP_ERROR_CHECK(esp_task_wdt_init(TWDT_TIMEOUT_S, false));
+      |                                        ^~~~~~~~~~~~~~
+In file included from /home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:15:
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_system/include/esp_task_wdt.h:47:58: note: expected 'const esp_task_wdt_config_t *' but argument is of type 'int'
+   47 | esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t *config);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:298:22: error: too many arguments to function 'esp_task_wdt_init'
+  298 |      ESP_ERROR_CHECK(esp_task_wdt_init(TWDT_TIMEOUT_S, false));
+      |                      ^~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/keithuncouth/esp-idf-v5.3.2/components/esp_system/include/esp_task_wdt.h:47:11: note: declared here
+   47 | esp_err_t esp_task_wdt_init(const esp_task_wdt_config_t *config);
+      |           ^~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: At top level:
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:255:13: warning: 'wait_for_ip' defined but not used [-Wunused-function]
+  255 | static void wait_for_ip(void)
+      |             ^~~~~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

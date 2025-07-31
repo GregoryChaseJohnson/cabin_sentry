@@ -1,0 +1,4 @@
+idf_ver: ">=5.3.2"
+name: ota_diag
+src_dir: .
+include_dir: include

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/CMakeFiles/bootloader
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/CMakeFiles/bootloader.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/CMakeFiles/bootloader-complete.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,117 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:381:6: error: redefinition of 'camera_init_ok'
+  381 | bool camera_init_ok = false;
+      |      ^~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:29:6: note: previous definition of 'camera_init_ok' with type '_Bool'
+   29 | bool camera_init_ok = false;
+      |      ^~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:382:6: error: redefinition of 'camera_server_ok'
+  382 | bool camera_server_ok = false;
+      |      ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:30:6: note: previous definition of 'camera_server_ok' with type '_Bool'
+   30 | bool camera_server_ok = false;
+      |      ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:385:20: error: redefinition of 'TAG'
+  385 | static const char *TAG = "main_app";
+      |                    ^~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:33:20: note: previous definition of 'TAG' with type 'const char *'
+   33 | static const char *TAG = "main_app";
+      |                    ^~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:388:20: error: redefinition of 'CAM_TAG'
+  388 | static const char *CAM_TAG = "esp32-cam Webserver";
+      |                    ^~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:36:20: note: previous definition of 'CAM_TAG' with type 'const char *'
+   36 | static const char *CAM_TAG = "esp32-cam Webserver";
+      |                    ^~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:390:20: error: redefinition of '_STREAM_CONTENT_TYPE'
+  390 | static const char* _STREAM_CONTENT_TYPE = "multipart/x-mixed-replace;boundary=" PART_BOUNDARY;
+      |                    ^~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:38:20: note: previous definition of '_STREAM_CONTENT_TYPE' with type 'const char *'
+   38 | static const char* _STREAM_CONTENT_TYPE = "multipart/x-mixed-replace;boundary=" PART_BOUNDARY;
+      |                    ^~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:391:20: error: redefinition of '_STREAM_BOUNDARY'
+  391 | static const char* _STREAM_BOUNDARY     = "\r\n--" PART_BOUNDARY "\r\n";
+      |                    ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:39:20: note: previous definition of '_STREAM_BOUNDARY' with type 'const char *'
+   39 | static const char* _STREAM_BOUNDARY     = "\r\n--" PART_BOUNDARY "\r\n";
+      |                    ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:392:20: error: redefinition of '_STREAM_PART'
+  392 | static const char* _STREAM_PART         = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+      |                    ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:40:20: note: previous definition of '_STREAM_PART' with type 'const char *'
+   40 | static const char* _STREAM_PART         = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
+      |                    ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:420:15: error: redefinition of 'file_size_buffer'
+  420 | static size_t file_size_buffer[FILE_SIZE_BUFFER_LENGTH] = {0};
+      |               ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:68:15: note: previous definition of 'file_size_buffer' with type 'size_t[14]' {aka 'unsigned int[14]'}
+   68 | static size_t file_size_buffer[FILE_SIZE_BUFFER_LENGTH] = {0};
+      |               ^~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:421:12: error: redefinition of 'buffer_index'
+  421 | static int buffer_index = 1;
+      |            ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:69:12: note: previous definition of 'buffer_index' with type 'int'
+   69 | static int buffer_index = 1;
+      |            ^~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:424:20: error: redefinition of 'send_detection_notification'
+  424 | static inline void send_detection_notification(void) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:72:20: note: previous definition of 'send_detection_notification' with type 'void(void)'
+   72 | static inline void send_detection_notification(void) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:428:18: error: redefinition of 'init_camera'
+  428 | static esp_err_t init_camera(void) {
+      |                  ^~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:76:18: note: previous definition of 'init_camera' with type 'esp_err_t(void)' {aka 'int(void)'}
+   76 | static esp_err_t init_camera(void) {
+      |                  ^~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:465:20: error: redefinition of 'update_file_size_buffer'
+  465 | static inline void update_file_size_buffer(size_t new_size) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:113:20: note: previous definition of 'update_file_size_buffer' with type 'void(size_t)' {aka 'void(unsigned int)'}
+  113 | static inline void update_file_size_buffer(size_t new_size) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:470:22: error: redefinition of 'calculate_average_file_size'
+  470 | static inline size_t calculate_average_file_size(void) {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:118:22: note: previous definition of 'calculate_average_file_size' with type 'size_t(void)' {aka 'unsigned int(void)'}
+  118 | static inline size_t calculate_average_file_size(void) {
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:477:18: error: redefinition of 'jpg_stream_httpd_handler'
+  477 | static esp_err_t jpg_stream_httpd_handler(httpd_req_t *req) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:125:18: note: previous definition of 'jpg_stream_httpd_handler' with type 'esp_err_t(httpd_req_t *)' {aka 'int(struct httpd_req *)'}
+  125 | static esp_err_t jpg_stream_httpd_handler(httpd_req_t *req) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:586:20: error: redefinition of 'uri_get'
+  586 | static httpd_uri_t uri_get = {
+      |                    ^~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:239:20: note: previous definition of 'uri_get' with type 'httpd_uri_t' {aka 'struct httpd_uri'}
+  239 | static httpd_uri_t uri_get = {
+      |                    ^~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:593:23: error: redefinition of 'start_camera_server'
+  593 | static httpd_handle_t start_camera_server(void) {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:246:23: note: previous definition of 'start_camera_server' with type 'void *(void)'
+  246 | static httpd_handle_t start_camera_server(void) {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:607:13: error: redefinition of 'wifi_event_handler'
+  607 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:260:13: note: previous definition of 'wifi_event_handler' with type 'void(void *, const char *, int32_t,  void *)' {aka 'void(void *, const char *, long int,  void *)'}
+  260 | static void wifi_event_handler(void* arg, esp_event_base_t event_base,
+      |             ^~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:615:13: error: redefinition of 'register_wifi_disconnect_logger'
+  615 | static void register_wifi_disconnect_logger(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:268:13: note: previous definition of 'register_wifi_disconnect_logger' with type 'void(void)'
+  268 | static void register_wifi_disconnect_logger(void) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:620:6: error: redefinition of 'app_main'
+  620 | void app_main(void) {
+      |      ^~~~~~~~
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:273:6: note: previous definition of 'app_main' with type 'void(void)'
+  273 | void app_main(void) {
+      |      ^~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
