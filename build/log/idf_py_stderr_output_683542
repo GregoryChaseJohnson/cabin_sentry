@@ -1,0 +1,10 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: In function 'app_main':
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:378:26: error: expected ')' before numeric constant
+  378 |     s->set_aec_value(s, 9
+      |                     ~    ^
+      |                          )
+  379 |         00);     // 0–1200, adjust as needed (higher = brighter)
+      |         ~~                
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

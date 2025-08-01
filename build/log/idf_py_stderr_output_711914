@@ -1,0 +1,9 @@
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c: In function 'init_camera':
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:104:26: error: 'FRAMESIZE_XVGA' undeclared (first use in this function); did you mean 'FRAMESIZE_XGA'?
+  104 |         .frame_size    = FRAMESIZE_XVGA,
+      |                          ^~~~~~~~~~~~~~
+      |                          FRAMESIZE_XGA
+/home/keithuncouth/esp-idf-v5.3.2/examples/system/ota/simple_ota_example/main/main.c:104:26: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5969: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

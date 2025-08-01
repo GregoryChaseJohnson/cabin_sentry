@@ -1,0 +1,556 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15648
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jul 29 2025 01:43:21[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 0000d000 00004000[0m
+[0;32mI (76) boot:  1 otadata          OTA data         01 00 00011000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 00013000 00001000[0m
+[0;32mI (91) boot:  3 ota_0            OTA app          00 10 00020000 00150000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00170000 00150000[0m
+[0;32mI (106) boot: End of partition table[0m
+[0;32mI (110) boot: No factory image, trying OTA 0[0m
+[0;32mI (115) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (191) esp_image: segment 1: paddr=0004fea0 vaddr=3ffb0000 size=00178h (   376) load[0m
+[0;32mI (192) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (469) esp_image: segment 3: paddr=00111f7c vaddr=3ffb0178 size=05520h ( 21792) load[0m
+[0;32mI (477) esp_image: segment 4: paddr=001174a4 vaddr=40080000 size=1f028h (127016) load[0m
+[0;32mI (543) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (544) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (544) boot: Disabling RNG early entropy source...[0m
+[0;32mI (561) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (563) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (563) esp_psram: Speed: 40MHz[0m
+[0;32mI (564) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (572) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (581) cpu_start: Multicore app[0m
+[0;32mI (1488) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1496) cpu_start: Pro cpu start user code[0m
+[0;32mI (1496) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1496) app_init: Application information:[0m
+[0;32mI (1499) app_init: Project name:     esp32_sentry[0m
+[0;32mI (1504) app_init: App version:      v5.3.2-dirty[0m
+[0;32mI (1510) app_init: Compile time:     Jul 29 2025 01:44:12[0m
+[0;32mI (1516) app_init: ELF file SHA256:  0e6867fb8...[0m
+[0;32mI (1521) app_init: ESP-IDF:          v5.3.2-dirty[0m
+[0;32mI (1526) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1531) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1536) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1542) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1549) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1555) heap_init: At 3FFBBFA0 len 00024060 (144 KiB): DRAM[0m
+[0;32mI (1561) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1567) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1574) heap_init: At 4009F028 len 00000FD8 (3 KiB): IRAM[0m
+[0;32mI (1581) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1589) spi_flash: detected chip: generic[0m
+[0;32mI (1592) spi_flash: flash io: dio[0m
+[0;33mW (1597) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1608) main_task: Started on CPU0[0m
+[0;32mI (1618) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1618) main_task: Calling app_main()[0m
+[0;32mI (1618) main_app: App starting. Initializing NVS...[0m
+[0;31mE (1648) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+[0;32mI (1658) wifi:wifi driver task: 3ffcbe28, prio:23, stack:6656, core=0[0m
+[0;32mI (1658) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1658) wifi:wifi certification version: v7.0[0m
+[0;32mI (1658) wifi:config NVS flash: enabled[0m
+[0;32mI (1658) wifi:config nano formating: disabled[0m
+[0;32mI (1668) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1668) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1678) wifi:Init management short buffer num: 32[0m
+[0;32mI (1678) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1688) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1688) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1688) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1698) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1698) wifi_init: rx ba win: 6[0m
+[0;32mI (1698) wifi_init: accept mbox: 6[0m
+[0;32mI (1708) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1708) wifi_init: udp mbox: 6[0m
+[0;32mI (1718) wifi_init: tcp mbox: 6[0m
+[0;32mI (1718) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1718) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1728) wifi_init: tcp mss: 1440[0m
+[0;32mI (1728) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1738) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1738) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1748) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1818) wifi:mode : sta (bc:dd:c2:c1:a0:d0)[0m
+[0;32mI (1828) wifi:enable tsf[0m
+[0;32mI (1838) main_app: OTA/diag server started on port 80[0m
+[0;32mI (1838) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1838) enhanced_ota: OTA/diag endpoints registered on shared HTTP server[0m
+[0;32mI (1848) esp32-cam Webserver: Camera server started on port 81[0m
+[0;32mI (1848) esp32-cam Webserver: Initializing camera...[0m
+[0;32mI (1858) main_app: Heap(8bit)=4309847  PSRAM=4191340[0m
+[0;32mI (1868) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1878) cam_hal: cam init ok[0m
+[0;32mI (1878) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1878) sccb: sccb_i2c_port=1[0m
+[0;32mI (1888) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1928) camera: Detected camera at address=0x30[0m
+[0;32mI (1928) camera: Detected OV2640 camera[0m
+[0;32mI (1928) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2018) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (2018) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (2028) cam_hal: cam config ok[0m
+[0;32mI (2028) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (2128) main_app: Manual exposure set[0m
+[0;32mI (2138) main_app: App running. camera_init_ok=1, camera_server_ok=1[0m
+[0;32mI (2138) main_task: Returned from app_main()[0m
+[0;32mI (3048) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3048) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4318) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4328) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4338) wifi:connected with TMOBILE-2577, aid = 1, channel 11, BW20, bssid = dc:8d:8a:86:25:80[0m
+[0;32mI (4338) wifi:security: WPA3-SAE, phy: bgn, rssi: -71[0m
+[0;32mI (4338) wifi:pm start, type: 0[0m
+
+[0;32mI (4348) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4358) wifi:<ba-add>idx:0 (ifx:0, dc:8d:8a:86:25:80), tid:6, ssn:2, winSize:64[0m
+[0;32mI (4368) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5358) esp_netif_handlers: sta ip: 192.168.12.251, mask: 255.255.255.0, gw: 192.168.12.1[0m
+[0;32mI (8238) wifi:<ba-add>idx:1 (ifx:0, dc:8d:8a:86:25:80), tid:0, ssn:0, winSize:64[0m
+[0;32mI (18728) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (18728) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19178) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19178) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19378) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (19498) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19498) esp32-cam Webserver: Motion detected![0m
+[0;32mI (19698) esp32-cam Webserver: MJPG: 21KB 319ms (3.1fps)[0m
+[0;32mI (19818) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (19818) esp32-cam Webserver: Motion detected![0m
+[0;32mI (20018) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (20138) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (20138) esp32-cam Webserver: Motion detected![0m
+[0;32mI (20338) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (20458) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (20458) esp32-cam Webserver: Motion detected![0m
+[0;32mI (20668) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (20778) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (20778) esp32-cam Webserver: Motion detected![0m
+[0;32mI (20988) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (21098) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (21098) esp32-cam Webserver: Motion detected![0m
+[0;32mI (21318) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (21418) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (21418) esp32-cam Webserver: Motion detected![0m
+[0;32mI (21638) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (21738) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (21738) esp32-cam Webserver: Motion detected![0m
+[0;32mI (21958) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (22058) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (22058) esp32-cam Webserver: Motion detected![0m
+[0;32mI (22278) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (22378) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (22378) esp32-cam Webserver: Motion detected![0m
+[0;32mI (22598) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (22698) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (22698) esp32-cam Webserver: Motion detected![0m
+[0;32mI (22918) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (23248) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (23578) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (23898) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (24228) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (24548) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (24878) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (25208) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (25528) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (25858) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (26178) esp32-cam Webserver: MJPG: 21KB 319ms (3.1fps)[0m
+[0;32mI (26508) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (26828) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;32mI (27158) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (27488) esp32-cam Webserver: MJPG: 21KB 330ms (3.0fps)[0m
+[0;32mI (27728) enhanced_ota: HTTP GET /trigger_ota (stream)[0m
+[0;32mI (27788) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (27808) esp32-cam Webserver: MJPG: 21KB 320ms (3.1fps)[0m
+[0;33mW (27808) esp32-cam Webserver: Stream paused mid-connection; closing socket.[0m
+[0;33mW (27808) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (28308) esp_https_ota: Starting OTA...[0m
+[0;32mI (28308) esp_https_ota: Writing to partition subtype 17 at offset 0x170000[0m
+[0;32mI (46788) esp_image: segment 0: paddr=00170020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (46868) esp_image: segment 1: paddr=0019fea0 vaddr=3ffb0000 size=00178h (   376) [0m
+[0;32mI (46878) esp_image: segment 2: paddr=001a0020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (47168) esp_image: segment 3: paddr=00261f7c vaddr=3ffb0178 size=05520h ( 21792) [0m
+[0;32mI (47188) esp_image: segment 4: paddr=002674a4 vaddr=40080000 size=1f028h (127016) [0m
+[0;32mI (47238) esp_image: segment 0: paddr=00170020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (47318) esp_image: segment 1: paddr=0019fea0 vaddr=3ffb0000 size=00178h (   376) [0m
+[0;32mI (47328) esp_image: segment 2: paddr=001a0020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (47608) esp_image: segment 3: paddr=00261f7c vaddr=3ffb0178 size=05520h ( 21792) [0m
+[0;32mI (47628) esp_image: segment 4: paddr=002674a4 vaddr=40080000 size=1f028h (127016) [0m
+[0;32mI (48198) wifi:state: run -> init (0x0)[0m
+[0;32mI (48198) wifi:pm stop, total sleep time: 0 us / 43852735 us[0m
+
+[0;32mI (48198) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (48198) wifi:<ba-del>idx:0, tid:6[0m
+[0;32mI (48198) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;31mE (48208) wifi_debug: Wi-Fi disconnected. Reason: 8[0m
+[0;32mI (48248) wifi:flush txq[0m
+[0;32mI (48248) wifi:stop sw txq[0m
+[0;32mI (48248) wifi:lmac stop hw txq[0m
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15648
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 29 2025 01:43:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 0000d000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 00011000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 00013000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00020000 00150000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00170000 00150000[0m
+[0;32mI (107) boot: End of partition table[0m
+[0;32mI (151) esp_image: segment 0: paddr=00170020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (219) esp_image: segment 1: paddr=0019fea0 vaddr=3ffb0000 size=00178h (   376) load[0m
+[0;32mI (219) esp_image: segment 2: paddr=001a0020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (496) esp_image: segment 3: paddr=00261f7c vaddr=3ffb0178 size=05520h ( 21792) load[0m
+[0;32mI (505) esp_image: segment 4: paddr=002674a4 vaddr=40080000 size=1f028h (127016) load[0m
+[0;32mI (570) boot: Loaded app from partition at offset 0x170000[0m
+[0;32mI (570) boot: Disabling RNG early entropy source...[0m
+[0;32mI (583) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (585) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (585) esp_psram: Speed: 40MHz[0m
+[0;32mI (586) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (594) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (603) cpu_start: Multicore app[0m
+[0;32mI (1510) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1518) cpu_start: Pro cpu start user code[0m
+[0;32mI (1518) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1518) app_init: Application information:[0m
+[0;32mI (1521) app_init: Project name:     esp32_sentry[0m
+[0;32mI (1526) app_init: App version:      v5.3.2-dirty[0m
+[0;32mI (1532) app_init: Compile time:     Jul 29 2025 01:44:12[0m
+[0;32mI (1538) app_init: ELF file SHA256:  0e6867fb8...[0m
+[0;32mI (1543) app_init: ESP-IDF:          v5.3.2-dirty[0m
+[0;32mI (1548) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1553) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1558) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1564) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1571) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1577) heap_init: At 3FFBBFA0 len 00024060 (144 KiB): DRAM[0m
+[0;32mI (1583) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1589) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1596) heap_init: At 4009F028 len 00000FD8 (3 KiB): IRAM[0m
+[0;32mI (1603) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1611) spi_flash: detected chip: generic[0m
+[0;32mI (1614) spi_flash: flash io: dio[0m
+[0;33mW (1619) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1630) main_task: Started on CPU0[0m
+[0;32mI (1640) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1640) main_task: Calling app_main()[0m
+[0;32mI (1640) main_app: App starting. Initializing NVS...[0m
+[0;31mE (1670) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+[0;32mI (1680) wifi:wifi driver task: 3ffcbe28, prio:23, stack:6656, core=0[0m
+[0;32mI (1680) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1680) wifi:wifi certification version: v7.0[0m
+[0;32mI (1680) wifi:config NVS flash: enabled[0m
+[0;32mI (1680) wifi:config nano formating: disabled[0m
+[0;32mI (1690) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1690) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1700) wifi:Init management short buffer num: 32[0m
+[0;32mI (1700) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1710) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1710) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1710) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1720) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1720) wifi_init: rx ba win: 6[0m
+[0;32mI (1720) wifi_init: accept mbox: 6[0m
+[0;32mI (1730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1730) wifi_init: udp mbox: 6[0m
+[0;32mI (1740) wifi_init: tcp mbox: 6[0m
+[0;32mI (1740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1740) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1750) wifi_init: tcp mss: 1440[0m
+[0;32mI (1750) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1760) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1760) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1770) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1840) wifi:mode : sta (bc:dd:c2:c1:a0:d0)[0m
+[0;32mI (1850) wifi:enable tsf[0m
+[0;32mI (1860) main_app: OTA/diag server started on port 80[0m
+[0;32mI (1860) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1860) enhanced_ota: OTA/diag endpoints registered on shared HTTP server[0m
+[0;32mI (1870) esp32-cam Webserver: Camera server started on port 81[0m
+[0;32mI (1870) esp32-cam Webserver: Initializing camera...[0m
+[0;32mI (1880) main_app: Heap(8bit)=4309847  PSRAM=4191340[0m
+[0;32mI (1890) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1900) cam_hal: cam init ok[0m
+[0;32mI (1900) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1900) sccb: sccb_i2c_port=1[0m
+[0;32mI (1910) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1950) camera: Detected camera at address=0x30[0m
+[0;32mI (1950) camera: Detected OV2640 camera[0m
+[0;32mI (1950) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2040) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (2040) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (2050) cam_hal: cam config ok[0m
+[0;32mI (2050) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (2150) main_app: Manual exposure set[0m
+[0;32mI (2160) main_app: Diagnostics PASSED. Marking app valid.[0m
+[0;32mI (2220) main_app: App running. camera_init_ok=1, camera_server_ok=1[0m
+[0;32mI (2220) main_task: Returned from app_main()[0m
+[0;32mI (3070) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3080) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4340) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4350) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4370) wifi:connected with TMOBILE-2577, aid = 1, channel 11, BW20, bssid = dc:8d:8a:86:25:80[0m
+[0;32mI (4370) wifi:security: WPA3-SAE, phy: bgn, rssi: -80[0m
+[0;32mI (4370) wifi:pm start, type: 0[0m
+
+[0;32mI (4370) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4390) wifi:<ba-add>idx:0 (ifx:0, dc:8d:8a:86:25:80), tid:6, ssn:2, winSize:64[0m
+[0;32mI (4450) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5110) wifi:<ba-add>idx:1 (ifx:0, dc:8d:8a:86:25:80), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5380) esp_netif_handlers: sta ip: 192.168.12.251, mask: 255.255.255.0, gw: 192.168.12.1[0m
+[0;32mI (10510) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (10510) esp32-cam Webserver: Motion detected![0m
+[0;32mI (10970) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (10970) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11170) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (11290) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11290) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11500) esp32-cam Webserver: MJPG: 22KB 329ms (3.0fps)[0m
+[0;32mI (11610) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11610) esp32-cam Webserver: Motion detected![0m
+[0;32mI (11830) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (11930) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (11930) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12150) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (12250) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12250) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12470) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (12570) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12570) esp32-cam Webserver: Motion detected![0m
+[0;32mI (12800) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (12890) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (12890) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13130) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (13290) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13290) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13450) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (13600) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13610) esp32-cam Webserver: Motion detected![0m
+[0;32mI (13770) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (13920) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (13930) esp32-cam Webserver: Motion detected![0m
+[0;32mI (14100) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (14240) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (14250) esp32-cam Webserver: Motion detected![0m
+[0;32mI (14430) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (14560) esp32-cam Webserver: Significant change in image size; possible motion[0m
+[0;32mI (14570) esp32-cam Webserver: Motion detected![0m
+[0;32mI (14760) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (15090) esp32-cam Webserver: MJPG: 22KB 329ms (3.0fps)[0m
+[0;32mI (15410) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (15730) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (16050) esp32-cam Webserver: MJPG: 22KB 319ms (3.1fps)[0m
+[0;32mI (16380) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (16700) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (17030) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (17350) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (17670) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (17990) esp32-cam Webserver: MJPG: 22KB 319ms (3.1fps)[0m
+[0;32mI (18310) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (18640) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;32mI (18970) esp32-cam Webserver: MJPG: 22KB 329ms (3.0fps)[0m
+[0;32mI (19290) esp32-cam Webserver: MJPG: 22KB 320ms (3.1fps)[0m
+[0;32mI (19390) enhanced_ota: HTTP GET /trigger_ota (stream)[0m
+[0;32mI (19470) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (19620) esp32-cam Webserver: MJPG: 22KB 330ms (3.0fps)[0m
+[0;33mW (19620) esp32-cam Webserver: Stream paused mid-connection; closing socket.[0m
+[0;33mW (19620) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (19990) esp_https_ota: Starting OTA...[0m
+[0;32mI (19990) esp_https_ota: Writing to partition subtype 16 at offset 0x20000[0m
+[0;32mI (39560) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (39640) esp_image: segment 1: paddr=0004fea0 vaddr=3ffb0000 size=00178h (   376) [0m
+[0;32mI (39650) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (39930) esp_image: segment 3: paddr=00111f7c vaddr=3ffb0178 size=05520h ( 21792) [0m
+[0;32mI (39950) esp_image: segment 4: paddr=001174a4 vaddr=40080000 size=1f028h (127016) [0m
+[0;32mI (40020) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (40100) esp_image: segment 1: paddr=0004fea0 vaddr=3ffb0000 size=00178h (   376) [0m
+[0;32mI (40110) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (40390) esp_image: segment 3: paddr=00111f7c vaddr=3ffb0178 size=05520h ( 21792) [0m
+[0;32mI (40410) esp_image: segment 4: paddr=001174a4 vaddr=40080000 size=1f028h (127016) [0m
+[0;32mI (41020) wifi:state: run -> init (0x0)[0m
+[0;32mI (41020) wifi:pm stop, total sleep time: 0 us / 36646887 us[0m
+
+[0;32mI (41020) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (41020) wifi:<ba-del>idx:0, tid:6[0m
+[0;32mI (41020) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;31mE (41030) wifi_debug: Wi-Fi disconnected. Reason: 8[0m
+[0;32mI (41070) wifi:flush txq[0m
+[0;32mI (41070) wifi:stop sw txq[0m
+[0;32mI (41070) wifi:lmac stop hw txq[0m
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15648
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 29 2025 01:43:21[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 0000d000 00004000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 00011000 00002000[0m
+[0;32mI (84) boot:  2 phy_init         RF data          01 01 00013000 00001000[0m
+[0;32mI (92) boot:  3 ota_0            OTA app          00 10 00020000 00150000[0m
+[0;32mI (99) boot:  4 ota_1            OTA app          00 11 00170000 00150000[0m
+[0;32mI (107) boot: End of partition table[0m
+[0;32mI (145) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=2fe78h (196216) map[0m
+[0;32mI (213) esp_image: segment 1: paddr=0004fea0 vaddr=3ffb0000 size=00178h (   376) load[0m
+[0;32mI (213) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=c1f54h (794452) map[0m
+[0;32mI (491) esp_image: segment 3: paddr=00111f7c vaddr=3ffb0178 size=05520h ( 21792) load[0m
+[0;32mI (499) esp_image: segment 4: paddr=001174a4 vaddr=40080000 size=1f028h (127016) load[0m
+[0;32mI (564) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (564) boot: Disabling RNG early entropy source...[0m
+[0;32mI (577) quad_psram: This chip is ESP32-D0WD[0m
+[0;32mI (579) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (579) esp_psram: Speed: 40MHz[0m
+[0;32mI (580) esp_psram: PSRAM initialized, cache is in low/high (2-core) mode.[0m
+[0;33mW (588) esp_psram: Virtual address not enough for PSRAM, map as much as we can. 4MB is mapped[0m
+[0;32mI (597) cpu_start: Multicore app[0m
+[0;32mI (1504) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1512) cpu_start: Pro cpu start user code[0m
+[0;32mI (1512) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1512) app_init: Application information:[0m
+[0;32mI (1515) app_init: Project name:     esp32_sentry[0m
+[0;32mI (1520) app_init: App version:      v5.3.2-dirty[0m
+[0;32mI (1526) app_init: Compile time:     Jul 29 2025 01:44:12[0m
+[0;32mI (1532) app_init: ELF file SHA256:  0e6867fb8...[0m
+[0;32mI (1537) app_init: ESP-IDF:          v5.3.2-dirty[0m
+[0;32mI (1542) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1547) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (1552) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (1558) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1565) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (1571) heap_init: At 3FFBBFA0 len 00024060 (144 KiB): DRAM[0m
+[0;32mI (1577) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (1583) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (1590) heap_init: At 4009F028 len 00000FD8 (3 KiB): IRAM[0m
+[0;32mI (1597) esp_psram: Adding pool of 4096K of PSRAM memory to heap allocator[0m
+[0;32mI (1605) spi_flash: detected chip: generic[0m
+[0;32mI (1608) spi_flash: flash io: dio[0m
+[0;33mW (1613) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1624) main_task: Started on CPU0[0m
+[0;32mI (1634) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1634) main_task: Calling app_main()[0m
+[0;32mI (1634) main_app: App starting. Initializing NVS...[0m
+[0;31mE (1664) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+[0;32mI (1674) wifi:wifi driver task: 3ffcbe28, prio:23, stack:6656, core=0[0m
+[0;32mI (1674) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (1674) wifi:wifi certification version: v7.0[0m
+[0;32mI (1674) wifi:config NVS flash: enabled[0m
+[0;32mI (1674) wifi:config nano formating: disabled[0m
+[0;32mI (1684) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1684) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1694) wifi:Init management short buffer num: 32[0m
+[0;32mI (1694) wifi:Init static tx buffer num: 16[0m
+[0;32mI (1704) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (1704) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1704) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1714) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1714) wifi_init: rx ba win: 6[0m
+[0;32mI (1714) wifi_init: accept mbox: 6[0m
+[0;32mI (1724) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1724) wifi_init: udp mbox: 6[0m
+[0;32mI (1734) wifi_init: tcp mbox: 6[0m
+[0;32mI (1734) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1734) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1744) wifi_init: tcp mss: 1440[0m
+[0;32mI (1744) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1754) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1754) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1764) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1834) wifi:mode : sta (bc:dd:c2:c1:a0:d0)[0m
+[0;32mI (1844) wifi:enable tsf[0m
+[0;32mI (1854) main_app: OTA/diag server started on port 80[0m
+[0;32mI (1854) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1854) enhanced_ota: OTA/diag endpoints registered on shared HTTP server[0m
+[0;32mI (1864) esp32-cam Webserver: Camera server started on port 81[0m
+[0;32mI (1864) esp32-cam Webserver: Initializing camera...[0m
+[0;32mI (1874) main_app: Heap(8bit)=4309847  PSRAM=4191340[0m
+[0;32mI (1884) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1894) cam_hal: cam init ok[0m
+[0;32mI (1894) sccb: pin_sda 26 pin_scl 27[0m
+[0;32mI (1894) sccb: sccb_i2c_port=1[0m
+[0;32mI (1904) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1944) camera: Detected camera at address=0x30[0m
+[0;32mI (1944) camera: Detected OV2640 camera[0m
+[0;32mI (1944) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2034) cam_hal: buffer_size: 32768, half_buffer_size: 4096, node_buffer_size: 2048, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (2034) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (2044) cam_hal: cam config ok[0m
+[0;32mI (2044) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (2144) main_app: Manual exposure set[0m
+[0;32mI (2154) main_app: Diagnostics PASSED. Marking app valid.[0m
+[0;32mI (2204) main_app: App running. camera_init_ok=1, camera_server_ok=1[0m
+[0;32mI (2204) main_task: Returned from app_main()[0m
+[0;32mI (3064) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3074) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4334) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4344) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4364) wifi:connected with TMOBILE-2577, aid = 1, channel 11, BW20, bssid = dc:8d:8a:86:25:80[0m
+[0;32mI (4364) wifi:security: WPA3-SAE, phy: bgn, rssi: -77[0m
+[0;32mI (4364) wifi:pm start, type: 0[0m
+
+[0;32mI (4364) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4384) wifi:<ba-add>idx:0 (ifx:0, dc:8d:8a:86:25:80), tid:6, ssn:2, winSize:64[0m
+[0;32mI (4434) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (5374) esp_netif_handlers: sta ip: 192.168.12.251, mask: 255.255.255.0, gw: 192.168.12.1[0m
+[0;32mI (9154) wifi:<ba-add>idx:1 (ifx:0, dc:8d:8a:86:25:80), tid:0, ssn:0, winSize:64[0m

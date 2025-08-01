@@ -46,10 +46,10 @@ static const char* _STREAM_BOUNDARY     = "\r\n--" PART_BOUNDARY "\r\n";
 static const char* _STREAM_PART         = "Content-Type: image/jpeg\r\nContent-Length: %u\r\n\r\n";
 
 #define CONFIG_XCLK_FREQ 10000000
-#define DESIRED_FPS 5
+#define DESIRED_FPS 2
 #define DESIRED_FRAME_TIME_MS (1000 / DESIRED_FPS)
-#define FILE_SIZE_BUFFER_LENGTH 14
-#define FILE_SIZE_CHANGE_THRESHOLD 800
+#define FILE_SIZE_BUFFER_LENGTH 9
+#define FILE_SIZE_CHANGE_THRESHOLD 600
 
 #define TWDT_TIMEOUT_S 5
 
@@ -69,7 +69,7 @@ static const char* _STREAM_PART         = "Content-Type: image/jpeg\r\nContent-L
 #define CAM_PIN_HREF    23
 #define CAM_PIN_PCLK    22
 
-#define DISABLE_ROLLBACK 1
+#define DISABLE_ROLLBACK 0
 
 static size_t file_size_buffer[FILE_SIZE_BUFFER_LENGTH] = {0};
 static int buffer_index = 1;
@@ -101,8 +101,8 @@ static esp_err_t init_camera(void) {
         .ledc_timer    = LEDC_TIMER_0,
         .ledc_channel  = LEDC_CHANNEL_0,
         .pixel_format  = PIXFORMAT_JPEG,
-        .frame_size    = FRAMESIZE_VGA,
-        .jpeg_quality  = 10,
+        .frame_size    = FRAMESIZE_SVGA,
+        .jpeg_quality  = 5,
         .fb_count      = 1,
         .fb_location   = CAMERA_FB_IN_PSRAM,
         .grab_mode     = CAMERA_GRAB_WHEN_EMPTY
@@ -371,6 +371,13 @@ void app_main(void) {
              heap_caps_get_free_size(MALLOC_CAP_8BIT),
              heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
     camera_init_ok = (init_camera() == ESP_OK);
+
+    if (camera_init_ok) {
+    sensor_t *s = esp_camera_sensor_get();
+    s->set_exposure_ctrl(s, 1);   // 0 = manual exposure
+    s->set_aec_value(s, 1100);     // 0–1200, adjust as needed (higher = brighter)
+    ESP_LOGI(TAG, "Manual exposure set");
+}
 
 #if !DISABLE_ROLLBACK
     /* Only validate or rollback if the running image is in PENDING_VERIFY */
